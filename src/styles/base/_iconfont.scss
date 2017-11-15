@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+@mixin icon-styles {
+    font-family: "iconfont";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+}
+
+%icon {
+    @include icon-styles;
+}
+
+@function icon-char($filename) {
+    $char: "";
+
+    @if $filename == codepen {
+        $char: "\E001";
+    }
+    @if $filename == github {
+        $char: "\E002";
+    }
+    @if $filename == linkedin {
+        $char: "\E003";
+    }
+    @if $filename == skype {
+        $char: "\E004";
+    }
+    @if $filename == telegram {
+        $char: "\E005";
+    }
+    @if $filename == vk {
+        $char: "\E006";
+    }
+
+    @return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+    &:#{$insert} {
+        @if $extend {
+            @extend %icon;
+        } @else {
+            @include icon-styles;
+        }
+        content: icon-char($filename);
+    }
+}
+
+.icon-codepen {
+    @include icon(codepen);
+}
+.icon-github {
+    @include icon(github);
+}
+.icon-linkedin {
+    @include icon(linkedin);
+}
+.icon-skype {
+    @include icon(skype);
+}
+.icon-telegram {
+    @include icon(telegram);
+}
+.icon-vk {
+    @include icon(vk);
+}
+

@@ -1,0 +1,28 @@
+// @import "../../../node_modules/uikit/src/scss/variables.scss";
+// @import "../../../node_modules/uikit/src/scss/mixins.scss";
+// @import "../../../node_modules/uikit/src/scss/uikit.scss";
+
+.uk-container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.uk-list-bullet {
+
+    > li {
+        &:before {
+            top: initial;
+        }
+    }
+}
+
+.uk-subnav {
+    
+    > * {
+        font-size: 21px;
+
+        >:first-child {
+            font-size: 21px;
+        }
+    }
+}
