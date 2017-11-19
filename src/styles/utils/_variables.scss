@@ -1,0 +1,67 @@
+// Mobile First media queries
+// $tablet: "only all and (min-width: 768px)";
+// $desktop: "only all and (min-width: 1200px)";
+
+// Standard media queries
+$mobile: "only all and (max-width: 959px)";
+$tablet: "only all and (max-width: 1199px)";
+
+
+// Borders
+$c-border: #000;
+
+
+// Colors
+$c-primary: #66aeff;
+$c-secondary: #000;
+
+$c-white: #fff;
+$c-black: #000;
+
+// Background
+$c-bg-primary: #f6f6f6;
+
+// Text
+$c-text: #000;
+
+// Icons
+$c-icon: #000;
+
+
+// Dimensions
+$font-size: 16px;
+$font-size-title: 16px;
+$font-size-subtitle: 16px;
+$line-height: normal;
+
+
+// Fonts
+$font-family: Verdana;
+
+// Letter-spacing
+$letter-spacing: normal;
+
+// Inputs
+$c-border-input: #000;
+$c-border-input-hover: $c-primary;
+$c-border-input-active: $c-primary;
+$c-border-input-focus: $c-primary;
+
+$c-link-btn: #000;
+$c-link-btn-bg: #000;
+$c-link-btn-bhover: #000;
+
+
+// Nav
+$c-nav-link: #000;
+
+
+// from LoVe to HAte
+$c-link: #000;
+$c-link-visited: #000;
+$c-link-hover: #000;
+$c-link-active: #000;
+
+
+// Transitions
+$transition-duration: 0.2s;

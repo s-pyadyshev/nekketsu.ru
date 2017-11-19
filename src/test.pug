@@ -1,0 +1,23 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+block head
+    - var pageTitle = 'Title';
+
+block styles
+    link(href='css/main.css' rel='stylesheet')
+
+block content
+    main
+        h2 Spritesheet example
+        div.icon-octocat
+
+        h2 Iconfont example
+        div.icon-social-vk
+        div.icon-clock
+
+        h2 SVG spritesheet example
+        svg
+            use(xlink:href="#social-vk")
+        //- svg
+        //-     use(xlink:href="#clock")

@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+
+    @media #{$mobile} {
+        justify-content: flex-start;
+        padding-top: 0;
+    }
+}

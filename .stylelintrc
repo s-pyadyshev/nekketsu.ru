@@ -1,0 +1,33 @@
+{
+    "rules": {
+        "indentation": 4,
+        "no-duplicate-selectors": true,
+        "color-hex-case": "lower",
+        "color-hex-length": "short",
+        "color-named": "never",
+        "selector-combinator-space-after": "always",
+        "selector-attribute-quotes": "always",
+        "selector-attribute-operator-space-before": "never",
+        "selector-attribute-operator-space-after": "never",
+        "selector-attribute-brackets-space-inside": "never",
+        "declaration-block-trailing-semicolon": "always",
+        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": "always",
+        "number-leading-zero": "always",
+        "function-url-quotes": "never",
+        "font-family-name-quotes": "always-where-recommended",
+        "comment-whitespace-inside": "always",
+        "rule-empty-line-before": "always-multi-line",
+        "selector-pseudo-element-colon-notation": "single",
+        "media-feature-range-operator-space-before": "always",
+        "media-feature-range-operator-space-after": "always",
+        "media-feature-parentheses-space-inside": "never",
+        "media-feature-colon-space-before": "never",
+        "media-feature-colon-space-after": "always",
+        "scss/dollar-variable-pattern": "^foo",
+        "scss/selector-no-redundant-nesting-selector": true
+    },
+    "plugins": [
+        "stylelint-scss"
+    ]
+}

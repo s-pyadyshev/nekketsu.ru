@@ -1,0 +1,25 @@
+.contact {
+
+    svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        color: $c-icon;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $c-primary;
+            transition-duration: $transition-duration;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+block head
+    - var pageTitle = 'Title';
+
+block content
+    main.main
+        .uk-container
+            .uk-flex-center.uk-grid-small(class="uk-child-width-9-3" uk-grid)
+                section(class="uk-width-1-4@m")
+                    .uk-card.uk-card-default.uk-card-body.uk-card-small
+                        .uk-margin Sergey Pyadyshev
+                        img(src="img/photo.jpg" width="747" height="747" alt="" title="").photo
+                        
+                        .contact
+                            ul.uk-iconnav.contact__list
+                                li.contact__item
+                                    a(href="https://github.com/s-pyadyshev" title="Github" target="_blank").contact__link
+                                        svg
+                                            use(xlink:href="#github")
+                                li.contact__item
+                                    a(href="https://www.linkedin.com/in/sergey-pyadyshev-2208ab12a" title="LinkedIn" target="_blank").contact__link
+                                        svg
+                                            use(xlink:href="#linkedin")
+                    hr.uk-divider-icon
+                    .uk-card.uk-card-default.uk-card-body.uk-card-small.contact
+
+                        .uk-text-large.uk-text-uppercase.uk-label Contacts
+
+                        ul.uk-list.contact__list
+                            li.contact__item
+                                a(href="skype:s.pyadyshev?call" title="Skype" target="_blank").contact__link
+                                    svg
+                                        use(xlink:href="#skype")
+                                    | s.pyadyshev
+                            li.contact__item
+                                a(href="tg://resolve?domain=s_pyadyshev" title="" target="_blank").contact__link
+                                    svg
+                                        use(xlink:href="#telegram")
+                                    | s_pyadyshev
+
+                section(class="uk-width-expand@m")
+                    .uk-card.uk-card-default.uk-card-body.uk-card-small
+                        .uk-margin
+                            strike HTML architect, Cascading Stylesheets writer, jQuery plugins customizer
+                            span Front-end Developer
+                        nav.nav
+                            .uk-subnav.uk-subnav-pill(uk-switcher)
+                                li.uk-active
+                                    a(href="#" title="Skills") Skills
+                                li
+                                    a(href="#" title="Bio") Bio
+                                li
+                                    a(href="#" title="Work Timeline") Work Timeline
+
+                            .uk-switcher.uk-margin
+                                li
+                                    ul.uk-list.uk-list-bullet.uk-list-divider
+                                        li > 3 years in commercial development
+                                        li HTML5 / Pug / Haml / XML
+                                        li CSS3 / SASS(SCSS), LESS / BEM
+                                        li Gulp, npm
+                                        li Basic JS, jQuery
+                                        li Git (gitflow)
+                                        li Visual Studio Code, Sublime Text
+                                        li Adaptive/responsive layout, Pixel Perfect, Crossbrowser support (Chrome, FF,  IE9+, Safari)
+                                        li Team work skills
+                                        li Layout bugfixing skills
+                                        li English - Advanced level
+
+                                li Under construction
+                                li Under construction
