@@ -31,4 +31,9 @@
 }
 .photo {
     margin-bottom: 10px;
+
+    @media #{$mobile} {
+        width: 100%;
+        height: auto;
+    }
 }

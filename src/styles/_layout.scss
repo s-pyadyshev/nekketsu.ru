@@ -9,8 +9,12 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 100px;
+
+    @media #{$mobile} {
+        justify-content: flex-start;
+        padding-top: 0;
+    }
 }
 .nav {
     float: left;
-    padding-left: 20px;
 }

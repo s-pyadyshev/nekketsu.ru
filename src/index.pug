@@ -7,12 +7,10 @@ block head
 block content
     main.main
         .uk-container
-            .uk-text-large.uk-text-uppercase.uk-label Sergey Pyadyshev | Front-end Developer
-
-        .uk-container
             .uk-flex-center.uk-grid-small(class="uk-child-width-9-3" uk-grid)
                 section(class="uk-width-1-4@m")
                     .uk-card.uk-card-default.uk-card-body.uk-card-small
+                        .uk-margin Sergey Pyadyshev
                         img(src="img/photo.jpg" width="747" height="747" alt="" title="").photo
                         
                         .contact
@@ -22,7 +20,7 @@ block content
                                         svg
                                             use(xlink:href="#github")
                                 li.contact__item
-                                    a(href="" title="" target="_blank").contact__link
+                                    a(href="https://www.linkedin.com/in/sergey-pyadyshev-2208ab12a" title="LinkedIn" target="_blank").contact__link
                                         svg
                                             use(xlink:href="#linkedin")
                     hr.uk-divider-icon
@@ -32,18 +30,21 @@ block content
 
                         ul.uk-list.contact__list
                             li.contact__item
-                                a(href="" title="Skype" target="_blank").contact__link
+                                a(href="skype:s.pyadyshev?call" title="Skype" target="_blank").contact__link
                                     svg
                                         use(xlink:href="#skype")
                                     | s.pyadyshev
                             li.contact__item
-                                a(href="" title="" target="_blank").contact__link
+                                a(href="tg://resolve?domain=s_pyadyshev" title="" target="_blank").contact__link
                                     svg
                                         use(xlink:href="#telegram")
                                     | s_pyadyshev
 
                 section(class="uk-width-expand@m")
                     .uk-card.uk-card-default.uk-card-body.uk-card-small
+                        .uk-margin
+                            strike HTML architect, Cascading Stylesheets writer, jQuery plugins customizer
+                            span Front-end Developer
                         nav.nav
                             .uk-subnav.uk-subnav-pill(uk-switcher)
                                 li.uk-active
@@ -68,5 +69,5 @@ block content
                                         li Layout bugfixing skills
                                         li English - Advanced level
 
-                                li 2
-                                li 3
+                                li Under construction
+                                li Under construction
