@@ -12,12 +12,6 @@
         margin-right: 10px;
     }
 
-    &__item {
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-    }
-
     &__link {
         color: $c-icon;
 
@@ -30,7 +24,7 @@
     }
 }
 .photo {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     @media #{$mobile} {
         width: 100%;

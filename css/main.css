@@ -413,10 +413,6 @@ img.img-responsive {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 100px;
 }
 
 .nav {
@@ -436,10 +432,6 @@ img.img-responsive {
   margin-right: 10px;
 }
 
-.contact__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .contact__link {
   color: #000;
 }
@@ -452,7 +444,7 @@ img.img-responsive {
 }
 
 .photo {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 @media only all and (max-width: 959px) {
