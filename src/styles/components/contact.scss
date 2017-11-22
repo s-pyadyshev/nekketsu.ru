@@ -6,12 +6,6 @@
         margin-right: 10px;
     }
 
-    &__item {
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-    }
-
     &__link {
         color: $c-icon;
 
