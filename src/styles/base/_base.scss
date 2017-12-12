@@ -12,12 +12,11 @@ body {
   // https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
-  background-color: $c-bg-primary;
 }
 
 a {
