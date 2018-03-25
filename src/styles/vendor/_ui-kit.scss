@@ -1,6 +1,30 @@
+$breakpoint-small: 768px !default;  // Phone landscape
+
 @import "../../../node_modules/uikit/src/scss/variables.scss";
-@import "../../../node_modules/uikit/src/scss/mixins.scss";
-@import "../../../node_modules/uikit/src/scss/uikit.scss";
+@import "../../../node_modules/uikit/src/scss/components/variables.scss";
+@import "../../../node_modules/uikit/src/scss/components/mixin.scss";
+@import "../../../node_modules/uikit/src/scss/components/base.scss";
+@import "../../../node_modules/uikit/src/scss/components/section.scss";
+@import "../../../node_modules/uikit/src/scss/components/container.scss";
+@import "../../../node_modules/uikit/src/scss/components/grid.scss";
+@import "../../../node_modules/uikit/src/scss/components/tile.scss";
+@import "../../../node_modules/uikit/src/scss/components/card.scss";
+@import "../../../node_modules/uikit/src/scss/components/utility.scss";
+@import "../../../node_modules/uikit/src/scss/components/flex.scss";
+@import "../../../node_modules/uikit/src/scss/components/tab.scss";
+@import "../../../node_modules/uikit/src/scss/components/switcher.scss";
+@import "../../../node_modules/uikit/src/scss/components/column.scss";
+@import "../../../node_modules/uikit/src/scss/components/subnav.scss";
+@import "../../../node_modules/uikit/src/scss/components/background.scss";
+@import "../../../node_modules/uikit/src/scss/components/list.scss";
+@import "../../../node_modules/uikit/src/scss/components/text.scss";
+@import "../../../node_modules/uikit/src/scss/components/divider.scss";
+@import "../../../node_modules/uikit/src/scss/components/padding.scss";
+@import "../../../node_modules/uikit/src/scss/components/margin.scss";
+@import "../../../node_modules/uikit/src/scss/components/width.scss";
+@import "../../../node_modules/uikit/src/scss/components/iconnav.scss";
+
+
 
 .uk-container {
     box-sizing: border-box;
