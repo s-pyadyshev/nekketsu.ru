@@ -16,6 +16,7 @@ $breakpoint-small: 768px !default;  // Phone landscape
 @import "../../../node_modules/uikit/src/scss/components/column.scss";
 @import "../../../node_modules/uikit/src/scss/components/subnav.scss";
 @import "../../../node_modules/uikit/src/scss/components/background.scss";
+@import "../../../node_modules/uikit/src/scss/components/link.scss";
 @import "../../../node_modules/uikit/src/scss/components/list.scss";
 @import "../../../node_modules/uikit/src/scss/components/text.scss";
 @import "../../../node_modules/uikit/src/scss/components/divider.scss";
@@ -49,4 +50,17 @@ $breakpoint-small: 768px !default;  // Phone landscape
             font-size: 21px;
         }
     }
+}
+
+.uk-subnav-pill>.uk-active>a {
+    transition-duration: $transition-duration;
+}
+
+.uk-subnav-pill>*>a {
+    transition-duration: $transition-duration;
+}
+
+.uk-subnav-pill>*>a:focus, 
+.uk-subnav-pill>*>a:hover {
+    transition-duration: $transition-duration;
 }

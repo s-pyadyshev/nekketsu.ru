@@ -40,7 +40,6 @@ gulp.task('watch', function() {
     gulp.watch(config.watch.js, ['js-watch']);
     gulp.watch(config.watch.img, ['images']);
     gulp.watch(config.watch.svg, ['svg-watch']);
-    // gulp.watch(config.watch.iconfont, ['iconfont-watch']);
     gulp.watch(config.watch.pug, ['pug-watch']);
 });
 

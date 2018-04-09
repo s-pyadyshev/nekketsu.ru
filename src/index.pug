@@ -2,7 +2,7 @@
 extends ./templates/_base-template
 
 block head
-    - var pageTitle = 'Sergey Pyadyshev | Front-end Developer';
+    - var pageTitle = 'Sergei Piadyshev | Front-end Developer';
 
 block content
     header
@@ -10,7 +10,7 @@ block content
             .uk-grid
                 div(class="uk-width-1-3@s uk-width-1-4@m")
                     .uk-card.uk-card-default.uk-card-body.uk-card-small.uk-text-left
-                        h3 Sergey Pyadyshev 
+                        h3 Sergei Piadyshev 
                 div(class="uk-width-expand@s")
                     .uk-card.uk-card-default.uk-card-body.uk-card-small.uk-text-left
                         h3.uk-text-muted Front-end Developer
@@ -23,7 +23,7 @@ block content
                         img(src="img/photo.jpg" width="747" height="747" alt="" title="").photo
                         
                         .contact
-                            ul.uk-iconnav.contact__list
+                            ul.uk-iconnav.contact__list.uk-flex-between
                                 li.contact__item
                                     a(href="https://github.com/s-pyadyshev" title="Github" target="_blank").contact__link
                                         svg
@@ -36,6 +36,10 @@ block content
                                     a(href="https://www.upwork.com/o/profiles/users/_~010753d24a0e98f608/" title="Upwork" target="_blank").contact__link
                                         svg
                                             use(xlink:href="#upwork")
+                                li.contact__item
+                                    a(href="https://codepen.io/s-pyadyshev" title="Codepen" target="_blank").contact__link
+                                        svg
+                                            use(xlink:href="#codepen")
                     .uk-card.uk-card-default.uk-card-body.uk-card-small.contact
 
                         .uk-text-large.uk-text-uppercase.uk-label Contacts
@@ -57,32 +61,89 @@ block content
                     .uk-card.uk-card-default.uk-card-body.uk-card-small
                         nav.nav
                             .uk-subnav.uk-subnav-pill(uk-switcher)
-                                li.uk-active
-                                    a(href="#" title="Skills") Skills
                                 li
-                                    a(href="#" title="Highlights") Highlights
+                                    a(href="#" title="Skills") Who am I?
+                                li.uk-active
+                                    a(href="#" title="What can I do?") What can I do?
                                 li
                                     a(href="#" title="Portfolio") Portfolio
-                                li
-                                    a(href="#" title="Bio") Bio
+
 
                             .uk-switcher.uk-margin
-                                li
-                                    ul.uk-list.uk-list-bullet.uk-list-divider.uk-animation-fade
-                                        li More than 3 years in commercial development
-                                        li HTML5 / Pug / Haml
-                                        li CSS3 / SASS(SCSS), LESS, Stylus / BEM
-                                        li Gulp (svg-sprite, iconfont, retina images, stylelint etc.), yarn/npm/bower
-                                        li JavaScript, jQuery
-                                        li Bootstrap, Foundation, UIkit, %any-css-framework%
-                                        li Git (gitflow, submodules). In case of submodule structure I prefer to use more visual tools like GitKraken, SourceTree, TortoiseGit
-                                        li Visual Studio Code, Sublime Text
-                                        li Responsive layout, crossbrowser support (Chrome, Firefox (29+), Safari, ie9+, edge)
-                                        li Responsive email layout (with Foundation for emails or without any framework) for outlook 2007+, gmail, yandex, mail.ru, ios.
-                                        li Team work skills
-                                        li Layout bugfixing skills - I had to do a lot of this stuff and I realized that we still must strive to teach developers make better html layout and css styles for the overall good.
-                                        li English - Advanced level
+                                li 
+                                    p My name is Sergei Piadyshev, Front-end developer. I studied in Ulyanovsk State Technical University at 
+                                    | "Publishing Business and Editing" faculty where I for the first time found out how websites are created. 
+                                    | And at that time I made my first simple table layout site about Harry Harrison.
+                                    
+                                    p But somehow I became more interested in English that is why I decided to try to be a translator in the future. After university completion I worked as freelance translator for 0,5 year and then in a bank support center for 1 year. Then I found a job of technical translator in a local translation agency where I worked for 3 years.
 
-                                li Under construction
-                                li Under construction
+                                    p Finally I realized that I don't enjoy to be a translator anymore in addition to other reasons... and I decided to go back to creation of websites.
+
+                                    strong January 2014
+                                    p I started to refresh my knowledge of HTML and CSS at <a href="https://htmlacademy.ru/profile/id64956" class="uk-link">HTML Academy</a>&nbsp;and my new acquaintance who had several years of experience as freelance html developer gave me to make html pages, so I had extra part-time job at this period.
+
+                                    p
+                                        strong August 2015 - April 2016
+                                    p I quit my job and was offered a position of HTML developer in a young outsource company Kontora Ivanova.
+                                    | continued learn new things at <a href="https://www.codecademy.com/s-pyadyshev" class="uk-link">Codecademy</a>.
+                                    | I helped to teach several new employees HTML and CSS.
+
+                                    p
+                                        strong May 2016 - October 2016
+                                    p I began to work in Russian IT Group as HTML developer.
+                                    | I continued learn new things at <a href="https://www.freecodecamp.org/s-pyadyshev" class="uk-link">freeCodeCamp</a>.
+                                    | I teached 2 students how to make HTML layout in upcoming 2017 as part of their internship in the company.
+
+                                    p
+                                        strong October 2016 - Present
+                                    p I began to work in SimbirSoft as HTML developer.
+                                    | I started to learn JavaScript at <a href="https://ru.hexlet.io/u/s_pyadyshev" class="uk-link">Hexlet</a>.
+
+                                li
+                                    ul.uk-list.uk-list-bullet.uk-list-divider
+                                        p Boring listing of HTML5/CSS3/etc skills doesn't provide a complete picture of developer.
+                                        | That's why I will describe my experience, technologies I use and learned moral principles.
+
+                                        h3.uk-text-bold HTML
+                                        p I prefer to use Pug as template engine but I also worked with Haml.
+                                        | I had to do a lot of layout bugfixing and I realized that we still must strive to teach developers make better html layout and css styles for the overall good.
+
+
+                                        h3.uk-text-bold CSS
+                                        p I use SCSS due to its popularity but I also worked with SASS, Less, Stylus, SSS.
+                                        | I use normalize.<br>
+                                        | I use Autoprefixer and other css size optimization plugins at production build.<br>
+                                        | I worked with Bootstrap, Foundation, UIkit. Using CSS framework is not a big deal, so I can use any you wish.<br>
+                                        | I insist on using Stylelint everywhere.<br>
+                                        | I use mix of SMACSS and BEM<br>
+                                        | I am against too complex styles and prefer to use variables for colors, fonts, etc. and simple mixins<br>
+                                        | I like mobile first approach and think that all sites must be responsive<br>
+                                        | I fixed crossbrowser bugs for Chrome, Firefox (29+), Safari, ie9+, edge<br>
+                                        | Hover effect on buttons with a bit of transition make websites so cozy and warm
+
+
+                                        h3.uk-text-bold Boilerplate
+                                        p I use my own Gulp boilerplate to make such routine tasks ("Robots must suffer") as generation of iconfont, svg-sprite, retina sprites, css optimization, babel, image minifaction, stylelint etc.
+                                        | I like to add new useful tasks and tweaks<br>
+                                        | I worked with yarn/npm/bower
+
+                                        h3.uk-text-bold JavaScript
+                                        p Examples of my code can be found at github
+
+                                        h3.uk-text-bold Git
+                                        p I worked with Git following Gitflow process. 
+                                        | In case of submodule structure or resolving messy merge conflict I prefer to use more visual tools like GitKraken, SourceTree, TortoiseGit.
+                                        | I had to use SVN at one project and after Git I don't like it at all.
+
+
+                                        h3.uk-text-bold IDE
+                                        p I use Visual Studio Code or Sublime Text but also tried Atom, Brackets and WebStorm.
+                                        | Fan of Emmet hotkeys
+
+                                        h3.uk-text-bold Email
+                                        p I have experience making responsive email layout (with Foundation for emails or without any framework) for outlook 2007+, gmail (android), yandex, mail.ru, ios.
+
+                                        h3.uk-text-bold English
+                                        p Recent test of my English level at SimbirSoft showed that I have Upper-intermediate (almost Advanced) level. Good enough.
+
                                 li Under construction

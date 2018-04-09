@@ -19,22 +19,6 @@ body {
   letter-spacing: $letter-spacing;
 }
 
-a {
-  color: $c-link;
-
-  &:visited {
-    color: $c-link-visited;
-  }
-
-  &:hover {
-    color: $c-link-hover;
-  }
-
-  &:active {
-    color: $c-link-active;
-  }
-}
-
 img {
   box-sizing: content-box;
 }

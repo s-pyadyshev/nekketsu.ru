@@ -8,6 +8,7 @@
 
     &__link {
         color: $c-icon;
+        transition-duration: $transition-duration;
 
         &:hover,
         &:active,
