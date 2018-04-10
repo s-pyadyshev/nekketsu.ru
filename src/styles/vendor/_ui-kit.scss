@@ -7,6 +7,7 @@ $breakpoint-small: 768px !default;  // Phone landscape
 @import "../../../node_modules/uikit/src/scss/components/section.scss";
 @import "../../../node_modules/uikit/src/scss/components/container.scss";
 @import "../../../node_modules/uikit/src/scss/components/grid.scss";
+@import "../../../node_modules/uikit/src/scss/components/accordion.scss";
 @import "../../../node_modules/uikit/src/scss/components/tile.scss";
 @import "../../../node_modules/uikit/src/scss/components/card.scss";
 @import "../../../node_modules/uikit/src/scss/components/utility.scss";
@@ -25,7 +26,9 @@ $breakpoint-small: 768px !default;  // Phone landscape
 @import "../../../node_modules/uikit/src/scss/components/width.scss";
 @import "../../../node_modules/uikit/src/scss/components/iconnav.scss";
 
-
+.uk-accordion>:nth-child(n+2) {
+    margin-top: 0;
+}
 
 .uk-container {
     box-sizing: border-box;
@@ -63,4 +66,8 @@ $breakpoint-small: 768px !default;  // Phone landscape
 .uk-subnav-pill>*>a:focus, 
 .uk-subnav-pill>*>a:hover {
     transition-duration: $transition-duration;
+}
+
+h3 {
+    color: $global-inverse-color;
 }

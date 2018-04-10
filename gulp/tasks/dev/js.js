@@ -52,12 +52,6 @@ gulp.task('js-app', config.wrapPipe(function(success, error) {
         .pipe(gulp.dest(config.js.dest.app))
 }));
 
-// Copy jQuery
-gulp.task('copy-jquery', config.wrapPipe(function(success, error) {
-    return gulp.src('src/js/jquery/*.js')
-        .pipe(gulp.dest('build/js'))
-}));
-
 gulp.task('browserify', function () {
   var files = [
     'app.js'
