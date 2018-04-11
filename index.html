@@ -15,72 +15,79 @@
 
 <body class="uk-background-muted">
     <div class="svg-placeholder" style="height: 0; width: 0; position: absolute; visibility: hidden;"></div>
-    <header>
+    <header class="uk-background-secondary">
         <div class="uk-container uk-text-center">
             <div class="uk-grid">
                 <div class="uk-width-1-3@s uk-width-1-4@m">
-                    <div class="uk-card uk-card-default uk-card-body uk-card-small uk-text-left">
+                    <div class="uk-card uk-card-body uk-card-small uk-text-left">
                         <h3>Sergei Piadyshev</h3>
                     </div>
                 </div>
                 <div class="uk-width-expand@s">
-                    <div class="uk-card uk-card-default uk-card-body uk-card-small uk-text-left">
-                        <h3 class="uk-text-muted">Front-end Developer</h3>
+                    <div class="uk-card uk-card-body uk-card-small uk-text-left">
+                        <div class="uk-flex uk-flex-between">
+                            <h3 class="uk-margin-remove-bottom">Front-end Developer</h3>
+                            <div class="contact">
+                                <ul class="uk-iconnav contact__list uk-flex-between">
+                                    <li class="contact__item">
+                                        <a class="contact__link" href="https://github.com/s-pyadyshev" title="Github" target="_blank">
+                                            <svg>
+                                                <use xlink:href="#github"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <a class="contact__link" href="https://www.linkedin.com/in/sergey-pyadyshev-2208ab12a" title="LinkedIn" target="_blank">
+                                            <svg>
+                                                <use xlink:href="#linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <a class="contact__link" href="https://www.upwork.com/o/profiles/users/_~010753d24a0e98f608/" title="Upwork" target="_blank">
+                                            <svg>
+                                                <use xlink:href="#upwork"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="contact__item">
+                                        <a class="contact__link" href="https://codepen.io/s-pyadyshev" title="Codepen" target="_blank">
+                                            <svg>
+                                                <use xlink:href="#codepen"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main uk-background-muted">
+    <main class="main">
         <div class="uk-container">
             <div class="uk-grid">
                 <section class="uk-width-1-3@s uk-width-1-4@m">
                     <div class="uk-card uk-card-default uk-card-body uk-card-small">
                         <img class="photo" src="img/photo.jpg" width="747" height="747" alt="" title="">
-                        <div class="contact">
-                            <ul class="uk-iconnav contact__list uk-flex-between">
-                                <li class="contact__item">
-                                    <a class="contact__link" href="https://github.com/s-pyadyshev" title="Github" target="_blank">
-                                        <svg>
-                                            <use xlink:href="#github"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="contact__item">
-                                    <a class="contact__link" href="https://www.linkedin.com/in/sergey-pyadyshev-2208ab12a" title="LinkedIn" target="_blank">
-                                        <svg>
-                                            <use xlink:href="#linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="contact__item">
-                                    <a class="contact__link" href="https://www.upwork.com/o/profiles/users/_~010753d24a0e98f608/" title="Upwork" target="_blank">
-                                        <svg>
-                                            <use xlink:href="#upwork"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="contact__item">
-                                    <a class="contact__link" href="https://codepen.io/s-pyadyshev" title="Codepen" target="_blank">
-                                        <svg>
-                                            <use xlink:href="#codepen"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="uk-card uk-card-default uk-card-body uk-card-small contact">
-                        <div class="uk-text-large uk-text-uppercase uk-label">Contacts</div>
-                        <ul class="uk-list contact__list">
-                            <li class="contact__item">
-                                <a class="contact__link" href="skype:s.pyadyshev?call" title="Skype" target="_blank">
+                        <ul class="uk-list uk-text-primary">
+                            <li>
+                                <a href="mailto:s.pyadyshev@mail.ru" title="" target="_blank">
+                                    <svg>
+                                        <use xlink:href="#email"></use>
+                                    </svg>s.pyadyshev@mail.ru</a>
+                            </li>
+                            <li>
+                                <a href="skype:s.pyadyshev?call" title="Skype" target="_blank">
                                     <svg>
                                         <use xlink:href="#skype"></use>
                                     </svg>s.pyadyshev</a>
                             </li>
-                            <li class="contact__item">
-                                <a class="contact__link" href="tg://resolve?domain=s_pyadyshev" title="" target="_blank">
+                            <li>
+                                <a href="tg://resolve?domain=s_pyadyshev" title="" target="_blank">
                                     <svg>
                                         <use xlink:href="#telegram"></use>
                                     </svg>s_pyadyshev</a>
@@ -92,20 +99,86 @@
                     <div class="uk-card uk-card-default uk-card-body uk-card-small">
                         <nav class="nav">
                             <div class="uk-subnav uk-subnav-pill" uk-switcher>
-                                <li>
-                                    <a href="#" title="Skills">Who am I?</a>
-                                </li>
                                 <li class="uk-active">
                                     <a href="#" title="What can I do?">What can I do?</a>
                                 </li>
                                 <li>
+                                    <a href="#" title="Who am I?">Who am I?</a>
+                                </li>
+                                <li>
                                     <a href="#" title="Portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Q &amp; A">Q & A</a>
                                 </li>
                             </div>
                             <div class="uk-switcher uk-margin">
                                 <li>
-                                    <p>My name is Sergei Piadyshev, Front-end developer. I studied in Ulyanovsk State Technical University at</p>"Publishing Business and Editing" faculty where I for the first time found out how websites are created. And
-                                    at that time I made my first simple table layout site about Harry Harrison.
+                                    <ul class="uk-list uk-list-bullet uk-list-divider">
+                                        <p>Boring listing of HTML5/CSS3/etc skills doesn't provide a complete picture of developer.</p>That's why I will describe my experience, technologies I use and learned moral principles.
+                                        <div class="uk-divider-icon"></div>
+                                        <ul class="uk-padding-remove-left" uk-accordion>
+                                            <li class="uk-background-muted">
+                                                <a class="uk-accordion-title" href="#">HTML</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>I prefer to use Pug as template engine but I also worked with Haml.</p>I had to do a lot of layout bugfixing and I realized that we still must strive to teach developers make better html layout and css
+                                                    styles for the overall good.</div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">CSS</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>I use SCSS due to its popularity but I also worked with SASS, Less, Stylus, SSS.</p>I use normalize.
+                                                    <br>I use Autoprefixer and other css size optimization plugins at production build.
+                                                    <br>I worked with Bootstrap, Foundation, UIkit. Using CSS framework is not a big deal, so I can use any you wish.
+                                                    <br>I insist on using Stylelint everywhere.
+                                                    <br>I use mix of SMACSS and BEM
+                                                    <br>I am against too complex styles and prefer to use variables for colors, fonts, etc. and simple mixins
+                                                    <br>I like mobile first approach and think that all sites must be responsive
+                                                    <br>I fixed crossbrowser bugs for Chrome, Firefox (29+), Safari, ie9+, edge
+                                                    <br>Hover effect on buttons with a bit of transition make websites so cozy and warm</div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">Boilerplate</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>I use my own Gulp boilerplate to make such routine tasks ("Robots must suffer") as generation of iconfont, svg-sprite, retina sprites, css optimization, babel, image minifaction, stylelint etc.</p>I
+                                                    like to add new useful tasks and tweaks
+                                                    <br>I worked with yarn/npm/bower</div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">JavaScript</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>Examples of my code can be found at github</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">Git</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>I worked with Git following Gitflow process.</p>In case of submodule structure or resolving messy merge conflict I prefer to use more visual tools like GitKraken, SourceTree, TortoiseGit. I had to use
+                                                    SVN at one project and after Git I don't like it at all.</div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">IDE</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>I use Visual Studio Code or Sublime Text but also tried Atom, Brackets and WebStorm.</p>Fan of Emmet hotkeys</div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">Email</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>I have experience making responsive email layout (with Foundation for emails or without any framework) for outlook 2007+, gmail (android), yandex, mail.ru, ios.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="uk-accordion-title" href="#">English</a>
+                                                <div class="uk-accordion-content">
+                                                    <p>Recent test of my English level at SimbirSoft showed that I have Upper-intermediate (almost Advanced) level. Good enough.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>My name is Sergei Piadyshev, Front-end developer. I studied in Ulyanovsk State Technical University at "Publishing Business and Editing" faculty where I for the first time found out how websites are created. At that
+                                        time I made my first simple table layout site about Harry Harrison.</p>
                                     <p>But somehow I became more interested in English that is why I decided to try to be a translator in the future. After university completion I worked as freelance translator for 0,5 year and then in a bank support center
                                         for 1 year. Then I found a job of technical translator in a local translation agency where I worked for 3 years.</p>
                                     <p>Finally I realized that I don't enjoy to be a translator anymore in addition to other reasons... and I decided to go back to creation of websites.</p>
@@ -115,51 +188,20 @@
                                     <p>
                                         <strong>August 2015 - April 2016</strong>
                                     </p>
-                                    <p>I quit my job and was offered a position of HTML developer in a young outsource company Kontora Ivanova.</p>continued learn new things at
-                                    <a href="https://www.codecademy.com/s-pyadyshev" class="uk-link">Codecademy</a>. I helped to teach several new employees HTML and CSS.
+                                    <p>I quit my job and was offered a position of HTML developer in a young outsource company Kontora Ivanova. I continued learn new things at
+                                        <a href="https://www.codecademy.com/s-pyadyshev" class="uk-link">Codecademy</a>.</p>I helped to teach several new employees HTML and CSS.
                                     <p>
                                         <strong>May 2016 - October 2016</strong>
                                     </p>
                                     <p>I began to work in Russian IT Group as HTML developer.</p>I continued learn new things at
-                                    <a href="https://www.freecodecamp.org/s-pyadyshev" class="uk-link">freeCodeCamp</a>. I teached 2 students how to make HTML layout in upcoming 2017 as part of their internship in the company.
+                                    <a href="https://www.freecodecamp.org/s-pyadyshev" class="uk-link">freeCodeCamp</a>. Implemented usage of Gulp boilerplate to make layout for Bitrix templates. I teached 2 students how to make HTML layout in upcoming 2017 as part of their internship in the company.
                                     <p>
                                         <strong>October 2016 - Present</strong>
                                     </p>
-                                    <p>I began to work in SimbirSoft as HTML developer.</p>I started to learn JavaScript at
+                                    <p>I began to work in SimbirSoft as HTML developer.</p>Enhanced Gulp boilerplate to be used as default boilerplate in the company. Helped to make HTML/CSS test questions for to evaluate skills of developers in the company.
+                                    I started to learn JavaScript at
                                     <a href="https://ru.hexlet.io/u/s_pyadyshev" class="uk-link">Hexlet</a>.</li>
-                                <li>
-                                    <ul class="uk-list uk-list-bullet uk-list-divider">
-                                        <p>Boring listing of HTML5/CSS3/etc skills doesn't provide a complete picture of developer.</p>That's why I will describe my experience, technologies I use and learned moral principles.
-                                        <h3 class="uk-text-bold">HTML</h3>
-                                        <p>I prefer to use Pug as template engine but I also worked with Haml.</p>I had to do a lot of layout bugfixing and I realized that we still must strive to teach developers make better html layout and css styles for
-                                        the overall good.
-                                        <h3 class="uk-text-bold">CSS</h3>
-                                        <p>I use SCSS due to its popularity but I also worked with SASS, Less, Stylus, SSS.</p>I use normalize.
-                                        <br>I use Autoprefixer and other css size optimization plugins at production build.
-                                        <br>I worked with Bootstrap, Foundation, UIkit. Using CSS framework is not a big deal, so I can use any you wish.
-                                        <br>I insist on using Stylelint everywhere.
-                                        <br>I use mix of SMACSS and BEM
-                                        <br>I am against too complex styles and prefer to use variables for colors, fonts, etc. and simple mixins
-                                        <br>I like mobile first approach and think that all sites must be responsive
-                                        <br>I fixed crossbrowser bugs for Chrome, Firefox (29+), Safari, ie9+, edge
-                                        <br>Hover effect on buttons with a bit of transition make websites so cozy and warm
-                                        <h3 class="uk-text-bold">Boilerplate</h3>
-                                        <p>I use my own Gulp boilerplate to make such routine tasks ("Robots must suffer") as generation of iconfont, svg-sprite, retina sprites, css optimization, babel, image minifaction, stylelint etc.</p>I like to add
-                                        new useful tasks and tweaks
-                                        <br>I worked with yarn/npm/bower
-                                        <h3 class="uk-text-bold">JavaScript</h3>
-                                        <p>Examples of my code can be found at github</p>
-                                        <h3 class="uk-text-bold">Git</h3>
-                                        <p>I worked with Git following Gitflow process.</p>In case of submodule structure or resolving messy merge conflict I prefer to use more visual tools like GitKraken, SourceTree, TortoiseGit. I had to use SVN at one
-                                        project and after Git I don't like it at all.
-                                        <h3 class="uk-text-bold">IDE</h3>
-                                        <p>I use Visual Studio Code or Sublime Text but also tried Atom, Brackets and WebStorm.</p>Fan of Emmet hotkeys
-                                        <h3 class="uk-text-bold">Email</h3>
-                                        <p>I have experience making responsive email layout (with Foundation for emails or without any framework) for outlook 2007+, gmail (android), yandex, mail.ru, ios.</p>
-                                        <h3 class="uk-text-bold">English</h3>
-                                        <p>Recent test of my English level at SimbirSoft showed that I have Upper-intermediate (almost Advanced) level. Good enough.</p>
-                                    </ul>
-                                </li>
+                                <li>Under construction</li>
                                 <li>Under construction</li>
                             </div>
                         </nav>
@@ -168,7 +210,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="uk-background-secondary footer">
         <div class="uk-container">Copyright &copy; 2018 Made with love and
             <a href="https://getuikit.com" target="_blank">UIkit</a>&nbsp;by Sergei Piadyshev</div>
     </footer>
