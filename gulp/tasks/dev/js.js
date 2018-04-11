@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     vinylSourceStream = require('vinyl-source-stream'),
     es = require('event-stream');
 
-gulp.task('js', ['js-vendor', 'js-app', 'copy-jquery']);
+gulp.task('js', ['js-vendor', 'js-app']);
 
 // Vendor scripts
 gulp.task('js-vendor', config.wrapPipe(function(success, error) {

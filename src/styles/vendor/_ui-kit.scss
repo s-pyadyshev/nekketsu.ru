@@ -30,6 +30,14 @@ $breakpoint-small: 768px !default;  // Phone landscape
     margin-top: 0;
 }
 
+.uk-accordion-content {
+    margin-bottom: 20px;
+}
+
+.uk-accordion-title {
+    display: block;
+}
+
 .uk-container {
     box-sizing: border-box;
     width: 100%;

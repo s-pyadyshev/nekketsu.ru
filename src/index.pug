@@ -33,7 +33,7 @@ block content
                                         a(href="https://codepen.io/s-pyadyshev" title="Codepen" target="_blank").contact__link
                                             svg
                                                 use(xlink:href="#codepen")
-    main.main.uk-background-primary
+    main.main
         .uk-container
             .uk-grid
                 section(class="uk-width-1-3@s uk-width-1-4@m")
@@ -43,6 +43,11 @@ block content
                     .uk-card.uk-card-default.uk-card-body.uk-card-small.contact
 
                         ul.uk-list.uk-text-primary
+                            li
+                                a(href="mailto:s.pyadyshev@mail.ru" title="" target="_blank")
+                                    svg
+                                        use(xlink:href="#email")
+                                    | s.pyadyshev@mail.ru
                             li
                                 a(href="skype:s.pyadyshev?call" title="Skype" target="_blank")
                                     svg
@@ -65,7 +70,8 @@ block content
                                     a(href="#" title="Who am I?") Who am I?
                                 li
                                     a(href="#" title="Portfolio") Portfolio
-
+                                li
+                                    a(href="#" title="Q & A") Q & A
 
                             .uk-switcher.uk-margin
                                 li
@@ -73,13 +79,16 @@ block content
                                         p Boring listing of HTML5/CSS3/etc skills doesn't provide a complete picture of developer.
                                         | That's why I will describe my experience, technologies I use and learned moral principles.
 
+                                        .uk-divider-icon
+
                                         ul(uk-accordion).uk-padding-remove-left
-                                            li.uk-padding-small
+                                            li.uk-background-muted
+
                                                 a.uk-accordion-title(href="#") HTML
                                                 .uk-accordion-content
                                                     p I prefer to use Pug as template engine but I also worked with Haml.
                                                     | I had to do a lot of layout bugfixing and I realized that we still must strive to teach developers make better html layout and css styles for the overall good.
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") CSS
                                                 .uk-accordion-content
                                                     p I use SCSS due to its popularity but I also worked with SASS, Less, Stylus, SSS.
@@ -92,32 +101,32 @@ block content
                                                     | I like mobile first approach and think that all sites must be responsive<br>
                                                     | I fixed crossbrowser bugs for Chrome, Firefox (29+), Safari, ie9+, edge<br>
                                                     | Hover effect on buttons with a bit of transition make websites so cozy and warm
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") Boilerplate
                                                 .uk-accordion-content
                                                     p I use my own Gulp boilerplate to make such routine tasks ("Robots must suffer") as generation of iconfont, svg-sprite, retina sprites, css optimization, babel, image minifaction, stylelint etc.
                                                     | I like to add new useful tasks and tweaks<br>
                                                     | I worked with yarn/npm/bower
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") JavaScript
                                                 .uk-accordion-content
                                                     p Examples of my code can be found at github
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") Git
                                                 .uk-accordion-content
                                                     p I worked with Git following Gitflow process. 
                                                     | In case of submodule structure or resolving messy merge conflict I prefer to use more visual tools like GitKraken, SourceTree, TortoiseGit.
                                                     | I had to use SVN at one project and after Git I don't like it at all.
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") IDE
                                                 .uk-accordion-content
                                                     p I use Visual Studio Code or Sublime Text but also tried Atom, Brackets and WebStorm.
                                                     | Fan of Emmet hotkeys
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") Email
                                                 .uk-accordion-content
                                                     p I have experience making responsive email layout (with Foundation for emails or without any framework) for outlook 2007+, gmail (android), yandex, mail.ru, ios.
-                                            li.uk-padding-small
+                                            li
                                                 a.uk-accordion-title(href="#") English
                                                 .uk-accordion-content
                                                     p Recent test of my English level at SimbirSoft showed that I have Upper-intermediate (almost Advanced) level. Good enough.
@@ -147,4 +156,5 @@ block content
                                     | Enhanced Gulp boilerplate to be used as default boilerplate in the company.
                                     | Helped to make HTML/CSS test questions for to evaluate skills of developers in the company.
                                     | I started to learn JavaScript at <a href="https://ru.hexlet.io/u/s_pyadyshev" class="uk-link">Hexlet</a>.
+                                li Under construction
                                 li Under construction
