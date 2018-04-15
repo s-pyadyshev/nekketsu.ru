@@ -25,7 +25,7 @@ gulp.task('images', ['sprites', 'webp'], config.wrapPipe(function(success, error
             }),
             imageminJpegRecompress({
                 progressive: true,
-                max: 80,
+                max: 90,
                 min: 70
             }),
             imageminPngquant({ quality: '75-85' }),
