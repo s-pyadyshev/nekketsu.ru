@@ -1,0 +1,10 @@
+$badge-background-color: $color-gray;
+$badge-color: $color-white;
+$badge-padding: 4px 8px;
+
+.badge {
+  display: inline-block;
+  padding: $badge-padding;
+  background-color: $badge-background-color;
+  color: $badge-color;
+}

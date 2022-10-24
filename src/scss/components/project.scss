@@ -1,0 +1,38 @@
+.project {
+  @include makeContainer;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__date {
+    width: 100%;
+
+    @include tablet {
+      width: 20%;
+      padding-left: 16px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    margin-bottom: 32px;
+    padding-right: 16px;
+
+    @include tablet {
+      width: 60%;
+      margin-bottom: 0;
+      padding-left: 16px;
+      border-right: 1px solid $color-primary;
+    }
+  }
+
+  &__name {
+    width: 100%;
+    padding-right: 16px;
+
+    @include tablet {
+      width: 20%;
+      border-right: 1px solid $color-primary;
+    }
+  }
+}

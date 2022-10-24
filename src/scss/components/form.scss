@@ -1,0 +1,41 @@
+.form-control {
+  display: inline-block;
+  position: relative;
+
+  &.icon-left {
+    .form-icon {
+      left: 0;
+    }
+
+    .input {
+      padding-left: $input-padding-icon-x;
+    }
+  }
+
+  &.icon-right {
+    .form-icon {
+      right: 0;
+    }
+
+    .input {
+      padding-right: $input-padding-icon-x;
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 16px;
+
+  .label {
+    display: block;
+  }
+}
+
+.form-icon {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  background: none;
+  border: 0;
+}

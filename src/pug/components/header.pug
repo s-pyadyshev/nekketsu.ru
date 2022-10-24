@@ -1,0 +1,32 @@
+header.header
+  .container
+    .header__inner
+      .header__menu-toggle
+        button.menu-toggle-open.js-toggle-menu(type="button")
+          img(src="images/menu.svg" alt="logo." width="30")
+      a.header__logo(href="/")
+        img.logo(src="images/sp-logo.png" alt="logo." width="350" height="350")
+
+      .header__menu
+        button.menu-toggle-close.js-toggle-menu(type="button")
+          img(src="images/close.svg" alt="logo." width="30")
+        +navbar(
+          [
+            {
+              text: "Home",
+              active: true,
+              href: "/",
+              name: "home"
+            },
+            {
+              text: "Projects",
+              href: "projects.html",
+              name: "projects"
+            },
+            {
+              text: "About",
+              href: "about.html",
+              name: "about"
+            }
+          ]
+        )

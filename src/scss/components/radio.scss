@@ -1,0 +1,45 @@
+$radio-border-width: 2px;
+$radio-size: 16px;
+$radio-color: $color-black;
+$radio-focus-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+
+.radio {
+  display: flex;
+}
+
+.radio-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  ~ .radio-box {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: relative;
+      top: 3px;
+      flex-shrink: 0;
+      width: $radio-size;
+      height: $radio-size;
+      margin-right: 12px;
+      overflow: hidden;
+      border-radius: 50%;
+      background-color: $color-white;
+      border: $radio-border-width solid $radio-color;
+    }
+  }
+
+  &:checked {
+    ~ .radio-box {
+      &:before {
+        background-color: $radio-color;
+        box-shadow: inset 0 0 0 2px $color-white;
+      }
+    }
+  }
+}

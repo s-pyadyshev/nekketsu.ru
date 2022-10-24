@@ -1,0 +1,72 @@
+$h1-font-size-desktop: 64px;
+$h2-font-size-desktop: 48px;
+$h3-font-size-desktop: 32px;
+$h4-font-size-desktop: 24px;
+$h5-font-size-desktop: 20px;
+$h6-font-size-desktop: 16px;
+
+.h1 {
+  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 32px;
+
+  @include desktop {
+    font-size: $h1-font-size-desktop;
+  }
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 32px;
+
+  @include desktop {
+    font-size: $h2-font-size-desktop;
+  }
+}
+
+.h3 {
+  font-weight: 400;
+
+  @include desktop {
+    font-size: $h3-font-size-desktop;
+  }
+}
+
+.h4 {
+  font-size: 24px;
+  margin-bottom: 0;
+
+  @include desktop {
+    font-size: $h4-font-size-desktop;
+  }
+}
+
+.h5 {
+  font-size: 20px;
+  margin-bottom: 0;
+
+  @include desktop {
+    font-size: $h5-font-size-desktop;
+  }
+}
+
+.h6 {
+  font-size: 16px;
+  margin-bottom: 0;
+
+  @include desktop {
+    font-size: $h6-font-size-desktop;
+  }
+}
+
+.ul {
+  li {
+    list-style-type: disc;
+  }
+}
+
+.ol {
+  li {
+    list-style-type: decimal;
+  }
+}

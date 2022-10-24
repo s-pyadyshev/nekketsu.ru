@@ -1,0 +1,39 @@
+$button-background-color: transparent;
+$button-background-color-hover: $color-black;
+$button-border-color: $color-black;
+$button-color: $color-black;
+$button-color-hover: $color-white;
+$button-color-active: $color-white;
+
+.button {
+  display: inline-block;
+  min-width: 100px;
+  font-family: inherit;
+  border: 1px solid $button-border-color;
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 0;
+  appearance: none;
+  text-decoration: none;
+  background-color: $button-background-color;
+  color: $button-color;
+
+  &:focus {
+    background-color: $button-background-color-hover;
+    color: $button-color-hover;
+  }
+
+  &:hover {
+    background-color: $button-background-color-hover;
+    color: $button-color-hover;
+  }
+
+  &:active {
+    color: $button-color-active;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

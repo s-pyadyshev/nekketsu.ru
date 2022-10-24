@@ -1,0 +1,19 @@
+mixin pagination
+  nav.pagination(role="navigation" aria-label="pagination")
+    ul.pagination__list
+      li
+        a(href='#').pagination__prev Prev
+      li
+        a(href='#').pagination__link.pagination__link--current 1
+      li
+        a(href='#').pagination__link 2
+      li
+        a(href='#').pagination__link 3
+      li
+        a(href='#').pagination__link 4
+      li
+        a(href='#').pagination__link ...
+      li
+        a(href='#').pagination__link 5
+      li
+        a(href='#').pagination-next Next

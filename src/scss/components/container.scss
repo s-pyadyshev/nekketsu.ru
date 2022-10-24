@@ -1,0 +1,20 @@
+$container-padding-xs: 30px;
+$container-padding-desktop: 70px;
+
+@mixin makeContainer() {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: $laptop * 1px;
+  padding-right: $container-padding-xs;
+  padding-left: $container-padding-xs;
+
+  @include desktop {
+    padding-right: $container-padding-desktop;
+    padding-left: $container-padding-desktop;
+  }
+}
+
+.container {
+  @include makeContainer;
+}

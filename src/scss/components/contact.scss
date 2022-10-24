@@ -1,0 +1,18 @@
+.contact {
+  display: flex;
+}
+
+.contact__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+.contact__link {
+  font-size: 18px;
+  text-decoration: none;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,15 @@
+extends pug/base
+
+prepend vars
+  - title = 'About'
+  - activePage = 'about'
+
+append vars
+  //-
+
+block content
+  section.section
+    .container
+      h1.h1 About
+
+      p About me

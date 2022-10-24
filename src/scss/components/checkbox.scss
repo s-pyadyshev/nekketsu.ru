@@ -1,0 +1,44 @@
+$checkbox-border-width: 2px;
+$checkbox-size: 16px;
+$checkbox-color: $color-black;
+$checkbox-color-focus: $color-black;
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  ~ .checkbox-box {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: relative;
+      top: 3px;
+      flex-shrink: 0;
+      width: $checkbox-size;
+      height: $checkbox-size;
+      margin-right: 12px;
+      overflow: hidden;
+      background-color: $color-white;
+      border: $checkbox-border-width solid $checkbox-color;
+    }
+  }
+
+  &:checked {
+    ~ .checkbox-box {
+      &:before {
+        background-color: $checkbox-color;
+        box-shadow: inset 0 0 0 1px $color-white;
+      }
+    }
+  }
+}

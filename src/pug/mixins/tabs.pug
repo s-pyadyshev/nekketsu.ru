@@ -1,0 +1,12 @@
+mixin tabs
+  ul.tabs(data-tabs="tabs")
+    li
+      button.tab-button.is-active(data-tab="tab1") Tab№1
+    li
+      button.tab-button(data-tab="tab2") Tab№2
+
+  .tab-content(data-tabs-content="tabs")
+    .is-active(data-tab-content="tab1")
+      div Tab№1
+    div(data-tab-content="tab2")
+      div Tab№2

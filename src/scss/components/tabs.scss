@@ -1,0 +1,19 @@
+$tab-active-background-color: $color-gray;
+
+.tabs {
+  display: flex;
+
+  .tab-button {
+    &.is-active {
+      background-color: $tab-active-background-color;
+    }
+  }
+}
+
+[data-tab-content] {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}

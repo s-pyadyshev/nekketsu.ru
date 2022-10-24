@@ -1,0 +1,40 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #999;
+
+// PRIMARY AND SECONDARY
+$color-primary: #072a3e;
+$color-secondary: #a80f21;
+$color-muted: #f4f4f4;
+
+// FORMS
+$input-border-width: 1px;
+$input-border-color: $color-black;
+$input-border-color-hover: $color-gray;
+$input-icon-width: 32px;
+$input-padding-x: 8px;
+$input-padding-y: 8px;
+$input-padding: $input-padding-x $input-padding-y;
+$input-hint-font-size: 14px;
+$input-padding-icon-x: $input-icon-width + $input-padding-x;
+
+// FONTS
+// stylelint-disable-next-line
+$font-primary: "Custom Font", "Helvetica Neue", sans-serif;
+$font-weight: 400;
+$line-height: 1.4;
+$font-size: 16px;
+
+// EASING TRANSITIONS
+$transition-duration: 0.2s;
+
+// Settings
+$desktop: 1025;
+$desktop-xl: 1800;
+$laptop: 1440;
+$tablet: 768;
+$mobile: 320;
+$desktop-vh: 750;

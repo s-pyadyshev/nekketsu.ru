@@ -1,0 +1,9 @@
+mixin accordion
+  .accordion
+    .accordion-header
+      span.accordion-title Accordion title
+      button.accordion-toggle(data-accordion="")
+        span.accordion-toggle-closed +
+        span.accordion-toggle-opened -
+    .accordion-content
+    | Accordion content

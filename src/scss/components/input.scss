@@ -1,0 +1,31 @@
+.input {
+  padding: $input-padding;
+  border-width: $input-border-width;
+  border-style: solid;
+  border-color: $input-border-color;
+
+  &:hover {
+    border-color: $input-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $input-border-color-hover;
+  }
+
+  &:active {
+    border-color: $input-border-color-hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.input-hint {
+  font-size: $input-hint-font-size;
+}

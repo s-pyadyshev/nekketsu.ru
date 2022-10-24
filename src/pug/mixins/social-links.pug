@@ -1,0 +1,6 @@
+mixin social-links(data)
+  ul.social-links
+    each item in data
+      .social-links__item
+        a.social-links__link(href=item.href ? item.href : '#' target="_blank" rel="noopener noreferrer")
+          img(src=item.src alt="social icon." width="32" height="32")

@@ -1,0 +1,71 @@
+$switch-background-color: $color-gray;
+$switch-border-color: $color-gray;
+$switch-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+$switch-focus-shadow: 0 0 3px 1px rgba(34, 138, 230, 0.5);
+
+.switch {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  min-width: 42px;
+  min-height: 22px;
+  cursor: pointer;
+}
+
+.switch-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+
+  &:checked + .switch-box {
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:before {
+      right: -2px;
+      left: 20px;
+    }
+  }
+
+  &:focus + .switch-box {
+    box-shadow: $switch-focus-shadow;
+    border-color: $color-primary;
+  }
+}
+
+.switch-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: $switch-background-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $switch-border-color;
+  border-radius: 50px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    top: -2px;
+    right: 20px;
+    left: -2px;
+    display: block;
+    height: 22px;
+    margin-left: 0;
+    background-color: $color-white;
+    border-radius: 50px;
+    box-shadow: $switch-shadow;
+    will-change: opacity, transform;
+  }
+}
+
+.switch-label {
+  padding-left: 52px;
+}

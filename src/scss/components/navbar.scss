@@ -1,0 +1,25 @@
+.navbar {
+  &__list {
+    display: flex;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &--active {
+      color: $color-secondary;
+    }
+  }
+}

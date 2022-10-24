@@ -1,0 +1,15 @@
+//- items - pages in array, e.g. (['Main page', 'News'])
+//- last - last active page in span, e.g. (['Main page', 'News'], 'News detail')
+mixin breadcrumb(items, last)
+  nav.breadcrumb(aria-label="breadcrumbs")
+    ul
+      each item in items
+        li
+          if (index === items.length - 1)
+            span= item
+          else
+            a(href="#" title=item)= item
+
+      if last
+        li
+          span= last

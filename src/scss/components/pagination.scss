@@ -1,0 +1,40 @@
+$pagination-color-current: $color-black;
+$pagination-color-hover: $color-black;
+$pagination-gap: 16px;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--current {
+    color: $pagination-color-current;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $pagination-color-hover;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      margin-right: $pagination-gap;
+      margin-left: $pagination-gap;
+    }
+  }
+}
