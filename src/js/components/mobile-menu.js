@@ -1,15 +1,18 @@
-export const mobileMenu = (function () {
+export const mobileMenu = (() => {
   const init = function () {
-    var $mobileMenuToggle = $(".js-toggle-menu");
+    const toggleMenuButton = document.querySelectorAll(".js-toggle-menu");
 
-    if (!$mobileMenuToggle.length) {
+    if (!toggleMenuButton) {
       return;
     }
 
-    var $body = $("body");
+    const header = document.querySelector(".header");
+    const body = document.getElementsByTagName("body")[0];
 
-    $mobileMenuToggle.on("click", function () {
-      $body.toggleClass("mobile-menu-active");
+    header.addEventListener("click", (event) => {
+      if (event.target.className.includes("js-toggle-menu")) {
+        body.classList.toggle("mobile-menu-active");
+      }
     });
   };
 
