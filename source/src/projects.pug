@@ -6,8 +6,9 @@ prepend vars
   -
     projects = [
       {
-        logo: "images/rt.svg",
-        company: "Rostelecom"
+        logo: "images/rtkit.png",
+        company: "Rostelecom",
+        link: "https://rtkit.ru"
       },
       {
         name: "Internal records system (Knowledge management system)",
@@ -17,7 +18,8 @@ prepend vars
       },
       {
         logo: "images/sl.svg",
-        company: "Seller Labs"
+        company: "Seller Labs",
+        link: "https://www.sellerlabs.com"
       },
       {
         name: "Seller Labs PRO",
@@ -29,7 +31,8 @@ prepend vars
         logo: "images/freelance.svg",
         company: "Freelance",
         info: "Freelance projects from Upwork mostly",
-        date: "2018 - 2022"
+        date: "2018 - 2022",
+        link: "https://www.upwork.com/o/profiles/users/_~010753d24a0e98f608"
       },
       {
         name: "NDA",
@@ -40,13 +43,13 @@ prepend vars
       {
         name: "NDA",
         stack: "Pug, SCSS, jQuery, UIkit 3, Swiper, animate.css, Fullpage.js, scrollmagic, svg-sprite",
-        info: "30+ projects, 40h+ each. Manage team of 2-3 html developers on 15+ projects.",
+        info: "30+ projects, 40h+ each. Manage team of 2-3 html developers on 10+ projects.",
         date: "2019-2022"
       },
       {
         name: "NDA",
         stack: "Storybook, React, SCSS",
-        info: "UIkit development with Storybook including stylization of vendor React libraries (react-day-picker, react-select, react-modal etc.)",
+        info: "UIkit development (30+ components) with Storybook including stylization of vendor React libraries (react-day-picker, react-select, react-modal etc.)",
         date: "2019"
       },
       {
@@ -100,7 +103,7 @@ prepend vars
       {
         name: "Ecwid Image Gallery",
         stack: "React 16.3, SCSS",
-        info: "",
+        info: "All images in one row have the same height, preserve their ratios and fit container width. Upload image or json via drag and drop or URL.",
         date: "2021"
       },
       {
@@ -300,7 +303,7 @@ prepend vars
 append vars
 
 block content
-  .section
+  section.section
     .container
       h1.h1 Projects
     ul.project-list
@@ -309,7 +312,8 @@ block content
           li.project-list__item.background-default
             .project
               .project__name
-                img.project__logo(src= project.logo alt="company logo.")
+                a(href= project.link, target="_blank", rel="noopener noreferrer") 
+                  img.project__logo(src= project.logo alt="company logo.")
               .project__info= project.info
               .project__date= project.date
 

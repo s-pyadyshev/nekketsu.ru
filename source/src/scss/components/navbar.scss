@@ -1,10 +1,20 @@
 .navbar {
   &__list {
     display: flex;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
 
     li {
       &:not(:last-child) {
-        margin-right: 32px;
+        margin-bottom: 32px;
+        
+        @include tablet {
+          margin-right: 32px;
+          margin-bottom: 0;
+        }
       }
     }
   }

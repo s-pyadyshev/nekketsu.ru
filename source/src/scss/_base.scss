@@ -142,6 +142,11 @@ iframe {
 .background-dino {
   background-image: url(../images/dino.png);
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right bottom;
+  background-size: 90%;
+  background-position: center 85%;
+
+  @include tablet {
+    background-size: 50%;
+    background-position: right bottom;
+  }
 }

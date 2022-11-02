@@ -275,6 +275,7 @@ html(class=html.classList)&attributes(html.attrs)
         link(rel="manifest" href!=link.manifest)
       if link.maskIcon.href !== null
         link(rel="mask-icon" href!=link.maskIcon.href color=link.maskIcon.color)
+      include ./favicon.pug
     block styles
       link(rel="stylesheet" href!=`${baseDir}css/main.css?v=${Date.now()}`)
     block head-end

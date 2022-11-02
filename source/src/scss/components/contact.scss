@@ -1,5 +1,10 @@
 .contact {
   display: flex;
+  justify-content: center;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
 }
 
 .contact__item {
@@ -10,9 +15,14 @@
 
 .contact__link {
   font-size: 18px;
-  text-decoration: none;
 
   @include tablet {
     font-size: 24px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
   }
 }
