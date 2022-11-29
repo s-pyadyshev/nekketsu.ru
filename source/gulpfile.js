@@ -145,8 +145,8 @@ gulp.task("sprites:png", () => {
         cssName: "_sprites.scss",
         cssTemplate: "src/scss/_sprites.hbs",
         imgName: "sprites.png",
-        retinaImgName: "sprites@2x.png",
-        retinaSrcFilter: "src/images/sprites/png/*@2x.png",
+        // retinaImgName: "sprites@2x.png",
+        // retinaSrcFilter: "src/images/sprites/png/*@2x.png",
         padding: 2,
       })
     );

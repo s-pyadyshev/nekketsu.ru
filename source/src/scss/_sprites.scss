@@ -1,7 +1,8 @@
-$sprites: ();
+$sprites: (
+);
 
 @each $name in map-keys($sprites) {
-  .sprite-#{$name} {
-    @include sprite($name);
-  }
+	.sprite-#{$name} {
+		@include sprite($name);
+	}
 }
