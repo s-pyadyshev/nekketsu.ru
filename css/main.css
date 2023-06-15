@@ -888,6 +888,9 @@ iframe {
       margin-top: 16px;
       margin-bottom: 0;
       padding-left: 8px; }
+      @media (min-width: 768px) {
+        .project-list__item--company .project__info {
+          margin-top: 0; } }
       .project-list__item--company .project__info:empty {
         display: none; }
     .project-list__item--company .project__date:empty {
