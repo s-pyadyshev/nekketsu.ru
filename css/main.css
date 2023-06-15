@@ -191,7 +191,7 @@ html {
           box-sizing: border-box;
   font-family: "Baloo2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4; }
   html.is-lock-scroll,
   html.is-lock-scroll body {
@@ -312,38 +312,8 @@ iframe {
       background-size: 50%;
       background-position: right bottom; } }
 
-.clearfix {
-  overflow: auto; }
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  margin: -1px;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0); }
-
-.background-default {
-  background-color: #fff; }
-
-.background-muted {
-  background-color: #f4f4f4; }
-
-.color-github {
-  color: #24292f; }
-
-.color-linkedin {
-  color: #0a66c2; }
-
-.color-upwork {
-  color: #14a800; }
-
 .h1 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 42px;
   margin-bottom: 32px; }
   @media (min-width: 1025px) {
@@ -889,8 +859,42 @@ iframe {
 
 .project-list__item {
   padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #000; }
+  padding-bottom: 24px; }
+  .project-list__item--company {
+    color: #fff; }
+    .project-list__item--company .project {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+    .project-list__item--company .project__name {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: auto;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+      @media (min-width: 768px) {
+        .project-list__item--company .project__name {
+          width: 20%; } }
+    .project-list__item--company .project__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 16px;
+      margin-bottom: 0;
+      padding-left: 8px; }
+      .project-list__item--company .project__info:empty {
+        display: none; }
+    .project-list__item--company .project__date:empty {
+      display: none; }
+      @media (min-width: 768px) {
+        .project-list__item--company .project__date:empty {
+          display: block; } }
 
 .project {
   margin-right: auto;
@@ -925,18 +929,67 @@ iframe {
       .project__info {
         width: 60%;
         margin-bottom: 0;
-        padding-left: 16px;
-        border-right: 1px solid #072a3e; } }
+        padding-left: 16px; } }
   .project__name {
     width: 100%;
     padding-right: 16px; }
     @media (min-width: 768px) {
       .project__name {
-        width: 20%;
-        border-right: 1px solid #072a3e; } }
+        width: 20%; } }
 
 .section {
   padding-top: 32px;
   padding-bottom: 32px; }
+
+.clearfix {
+  overflow: auto; }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0); }
+
+.background-default {
+  background-color: #fff; }
+
+.background-muted {
+  background-color: #f4f4f4; }
+
+.background-holocene {
+  background-color: #fef2ec; }
+
+.background-miocene {
+  background-color: yellow; }
+
+.background-cretaceous {
+  background-color: #7fc64e; }
+
+.background-jurassic {
+  background-color: #34b2c9; }
+
+.background-triassic {
+  background-color: #812b92; }
+
+.background-neoarchean {
+  background-color: #f99bc1; }
+
+.background-eoarchean {
+  background-color: #da037f; }
+
+.color-github {
+  color: #24292f; }
+
+.color-linkedin {
+  color: #0a66c2; }
+
+.color-upwork {
+  color: #14a800; }
 
 /*# sourceMappingURL=main.css.map */

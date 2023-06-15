@@ -22,7 +22,6 @@
       width: 60%;
       margin-bottom: 0;
       padding-left: 16px;
-      border-right: 1px solid $color-primary;
     }
   }
 
@@ -32,7 +31,6 @@
 
     @include tablet {
       width: 20%;
-      border-right: 1px solid $color-primary;
     }
   }
 }
