@@ -1,0 +1,281 @@
+body {
+    font-family: Tahoma;
+    background: url("http://www.bwass.org/bucket/garage-simulator-bg4.jpg");
+    padding: 0 20px;
+  }
+  
+  .apps {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 5px 5px 0 5px;
+  }
+  
+  .beer {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    height: 150px;
+  }
+  
+  .beer-meter {
+    display: none;
+    height: 145px;
+    width: 15px;
+    margin-right: 15px;
+    background: orange;
+    animation-name: beer;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .start {
+    width: 250px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #fff;
+    color: #fff;
+  }
+  .start:hover {
+    background: pink;
+    color: #000;
+    border: 3px solid #000;
+  }
+  
+  .rules {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #container {
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .developer {
+    margin: 0;
+  }
+  .developer span {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .developer span:first-child {
+    width: 350px;
+  }
+  
+  .man {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    min-height: 190px;
+    top: 100px;
+    left: 100px;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #a0def7;
+    border: 1px solid #000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .man img {
+    width: 90px;
+    object-fit: cover;
+  }
+  
+  .remove,
+  .remove-bratok {
+    border: 1px solid #000;
+    padding: 3px;
+    cursor: pointer;
+    background: #def2f9;
+  }
+  
+  .removed {
+    background-color: red;
+  }
+  
+  .win-message {
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    overflow: auto;
+  }
+  .win-message img {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .win-message__inner {
+    position: relative;
+    height: 100%;
+  }
+  
+  .credits {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    animation-name: credits;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+  }
+  .credits p:first-child,
+  .credits p:last-child {
+    text-align: center;
+  }
+  
+  .lose-message {
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    overflow: auto;
+  }
+  .lose-message__inner-bg {
+    height: 380px;
+    width: 380px;
+    position: absolute;
+    top: 105px;
+    left: 310px;
+    background: #000;
+  }
+  .lose-message__img {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .lose-message__img img {
+    margin-bottom: 30px;
+  }
+  
+  .garage-logo,
+  .romhack-logo {
+    z-index: 1;
+    background: #000;
+    position: absolute;
+    top: 47%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  
+  .garage-logo {
+    height: 380px;
+    animation-name: garageLogo;
+    animation-duration: 25s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+  
+  .romhack-logo {
+    height: 380px;
+    animation-name: romhackLogo;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes credits {
+    0% {
+      top: 100vh;
+    }
+    100% {
+      top: 100px;
+    }
+  }
+  .timer__text {
+    display: inline;
+    font-size: 20px;
+    vertical-align: top;
+    color: #fff;
+  }
+  
+  #time {
+    font-weight: 700;
+    color: red;
+    vertical-align: top;
+  }
+  
+  .try-again {
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+  }
+  .try-again:hover {
+    background: pink;
+    color: #000;
+  }
+  
+  .vk-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @keyframes garageLogo {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes romhackLogo {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes beer {
+    0% {
+      height: 145px;
+    }
+    100% {
+      height: 0;
+    }
+  }
+  iframe {
+    display: none;
+    margin: 0 auto;
+  }
+  

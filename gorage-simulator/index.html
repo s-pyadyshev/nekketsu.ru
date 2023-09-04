@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gorage Simulator v0.213</title>
+    <script src="konami.js" type="text/javascript"></script>
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+   
+    <iframe width="640" height="480" src="https://www.youtube.com/embed/3BVTEOcYvE0" frameborder="0" allowfullscreen></iframe>
+    <div class="win-message">
+      <img src="img/shok10gl.gif" alt="" />
+    Ты выгнал всех пидоров из группы!
+      <img src="img/shok10gl.gif" alt="" />
+     <div class="win-message__inner">
+      <div class="credits">
+        <p>STAFF</p>
+        <p class="developer"><span>Оригинальный концепт:</span> <span>esteban <img src="img/otdykh01.gif" alt="" /></span></p>
+        <p class="developer"><span>Автор идеи:</span> <span>mafuta <img src="img/ustalost07.gif" alt="" /></span></p>
+        <p class="developer"><span>Ведущий программист:</span> <span>Kotix <img src="https://www.geocities.jp/hirondon/gifanime/furo.gif" alt="" /></span></p>
+        
+        <p class="developer"><span>Ромхакер:</span> <span>Lipetsk <img src="img/zlost03gl.gif" alt="" /></span></p>
+        <p class="developer"><span>Тестировщик:</span> <span>BZK <img src="img/ehkstrasens.gif" alt="" /></span></p>
+        <p class="developer"><span>Финансовый директор:</span> <span>Davitel <img src="img/zagar.gif" alt="" /></span></p>
+        <p class="developer"><span>Художник:</span> <span>ectoPower <img src="img/otdykh09.gif" alt="" /></span></p>
+        <p class="developer"><span>Закадровый голос:</span> <span>Kunio <img src="img/nafig_vsekh.gif" alt="" /></span></p>
+        <p class="developer"><span>Звукорежиссёр:</span> <span>Memori <img src="img/beseda10gl.gif" alt="" /></span></p>
+        <p class="developer"><span>Исполнительный режиссёр:</span> <span>Centurion <img src="img/otdykh02.gif" alt="" /></span></p>
+        <p class="developer"><span>Дизайнер:</span> <span>RVD <img src="img/zlost05.gif" alt="" /></span></p>
+        <p class="developer"><span>Поставщик травы:</span> <span>Dune <img src="img/otdykh02.gif" alt="" /></span></p>
+        <p class="developer"><span>Консультант по 90-м:</span> <span>Kinbeas <img src="img/organizator.gif" alt="" /></span></p>
+        <p class="developer"><span>Художник по костюмам:</span> <span>Huba Buba <img src="img/novosti.gif" alt="" /></span></p>
+        <p class="developer"><span>Композитор:</span> <span>Alpharushin <img src="img/kaleka.gif" alt="" /></span></p>
+        <p class="developer"><span>Компьютерная графика:</span> <span>Rock <img src="img/ebihara1.gif" alt="" /></span></p>    
+        <p class="developer"><span>Браток:</span> <span>Udav213 <img src="img/otdykh05.gif" alt="" /></span></p> 
+        <p class="developer"><span>Главный вдохновитель:</span> <span>Кинаман <img src="img/chervjak.gif" alt="" /></span></p> 
+        
+        <p>При разработке игры ни один осьминог не пострадал <img src="img/zhivotnye02.gif" alt="" /></p>
+        <p>© Nekketsu Sports Tournaments <br>
+          <a href="https://vk.com/nekketsu"class="vk-link" title="vk.com/nekketsu">vk.com/nekketsu</a></p>
+         <div class="try-again">Выгнать пидоров ещё раз</div>
+        <p>А если кликнуть на пиво и ввести <s>Кинаман</s>Конами Код на титульным экране, то .............</p>
+      </div>
+    <!--    <img src="img/esteban-bg-win.jpg" alt="" /> -->
+      </div>
+    </div>
+    
+    <div class="lose-message">
+      <p>Ты не успел выгнать всех пидоров и гараж был захвачен ромхакерами...</p>
+      <p>Не выгнано пидоров: <span class="pidors-left"></span></p>
+      <div class="lose-message__img">
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        <img src="img/romhack-win.gif" alt="" title=""/>
+        
+        <img src="img/garage-logo.jpg" alt="" class="garage-logo"/>
+    
+      <img src="img/romhack-logo2.png" alt="" class="romhack-logo" />
+        <div class="lose-message__inner-bg"></div>
+        </div>
+     <div class="try-again">Попробуй ещё раз, браток</div>
+    </div>
+    
+    <p class="rules"><b>Правила игры</b>: нужно выгнать всех <s>братков</s> пидоров из гаража, пока не закончится пиво</p>
+    <div class="timer__text">
+        <img src="img/ochakovo2.png" alt="" class="beer">
+        <div class="beer-meter">
+        </div>Быстрее, браток! Пиво заканчивается! <span id="time"></span>
+    </div>
+    <p class="start">Погнали</p>
+    
+    <div class="apps">
+      <img src="img/app-store.png" width="150" alt="" title="" />
+      <img src="img/google-play.png"  width="150" alt="" title="" />
+    </div>
+    
+    <div id="container">
+      
+        <div class='man man1'>Davitel<br>
+          <img src="img/davitel2.png"title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man2'>ectoPower<br>
+          <img src="img/ecto.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man2'>Memori<br>
+          <img src="img/memori.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man3'>Alpharushin<br>
+          <img src="img/alpharushin.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man4'>Kotix<br>
+          <img src="img/kotix2.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man5'>mafuta<br>
+          <img src="img/mafuta.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man6'>Lipetsk<br>
+          <img src="img/lipetsk.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man7 centurion'>Centurion<br>
+          <img src="img/centurion.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man8'>BZK<br>
+          <img src="img/bzk.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man9'>Kunio<br>
+          <img src="img/kunio.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man10'>RVD<br>
+          <img src="img/rvd.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man man11'>Дюныч & Стасыч<br>
+          <img src="img/dunych2.png" alt="" title=""/>
+            <div class="remove">Выгнать пидоров</div>
+        </div>
+      
+        <div class='man man12'>Horik<br>
+          <img src="img/horik.png" alt="" title=""/>
+            <div class="remove">Выгнать пидора</div>
+        </div>
+      
+        <div class='man bratok bratok1'>Amigo<br>
+          <img src="img/amigo.png" alt="" title=""/>
+            <div class="remove-bratok">Выгнать пидора</div>
+        </div>
+        <div class='man bratok bratok2'>Kinbeas<br>
+          <img src="img/kinbeas.png" alt="" title=""/>
+            <div class="remove-bratok">Выгнать пидора</div>
+        </div>
+        <div class='man bratok bratok3'>Udav213<br>
+          <img src="img/udav.png" alt="" title=""/>
+            <div class="remove-bratok">Выгнать пидора</div>
+        </div>
+    </div>
+    
+    <audio id="clickSFX1">
+      <source src="audio/esteban-fuck-you3.mp3">
+      </source>
+    
+    <audio id="clickSFX2">
+    <source src="audio/esteban-aaaa.mp3"></source></audio>
+    
+    <audio id="clickSFX3">
+    <source src="audio/esteban-fuckoff.mp3"></source></audio>
+    
+    <audio id="clickSFX4">
+    <source src="audio/esteban-guys.mp3"></source></audio>
+    
+    <audio id="clickSFX5">
+    <source src="audio/esteban-suck-dick.mp3"></source></audio>
+    
+    <audio id="clickSFX6">
+    <source src="audio/esteban-tak.mp3"></source></audio>
+    
+    <audio id="clickSFX7">
+    <source src="audio/esteban-twitch.mp3"></source>
+    </audio>
+    
+    <audio id="clickSFX8">
+    <source src="audio/esteban-hueplety2.mp3"></source>
+    </audio>
+    
+    <audio id="clickSFX9">
+    <source src="audio/esteban-mraz.mp3"></source>
+    </audio>
+    
+    <audio id="clickSFX10">
+    <source src="audio/esteban-pidoras2.mp3"></source>
+    </audio>
+    
+    <audio id="clickSFX11">
+    <source src="audio/esteban-hueta2.mp3"></source>
+    </audio>
+    
+    <audio id="clickBratok1">
+    <source src="audio/esteban-net-stoyat-2.mp3"></source>
+    </audio>
+    
+    <audio id="clickBratok2">
+    <source src="audio/esteban-net-stoyat2-2.mp3"></source>
+    </audio>
+    
+    <audio id="clickBratok3">
+    <source src="audio/esteban-blyat3.mp3"></source>
+    </audio>
+    
+    <audio id="clickBratok4">
+    <source src="audio/esteban-iii2.mp3"></source>
+    </audio>
+    
+    <audio id="clickBratok5">
+    <source src="audio/esteban-izdevaetes2.mp3"></source>
+    </audio>
+    
+    <audio id="bgm">
+        <source src="audio/bgm.mp3"></source>
+    </audio>
+    
+    <audio id="game-over">
+        <source src="audio/game-over.mp3"></source>
+    </audio>
+    
+    <audio id="ending">
+        <source src="audio/ending.mp3"></source>
+    </audio>
+    
+    <audio id="otryzhka">
+        <source src="audio/Kachestvennaya-Otrizhka.mp3"></source>
+    </audio>
+</body>
+</html>
