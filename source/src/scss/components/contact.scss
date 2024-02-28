@@ -1,15 +1,11 @@
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
 
   @include tablet {
-    justify-content: flex-start;
-  }
-}
-
-.contact__item {
-  &:not(:last-child) {
-    margin-right: 32px;
+    gap: 32px;
   }
 }
 

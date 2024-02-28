@@ -1,0 +1,6 @@
+mixin timeline(data)
+  ul.timeline
+    each item in data
+      li
+        h3= item.title
+        p= item.text

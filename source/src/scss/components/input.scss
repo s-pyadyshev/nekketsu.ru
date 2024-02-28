@@ -1,31 +1,34 @@
 .input {
+  appearance: none;
   padding: $input-padding;
-  border-width: $input-border-width;
-  border-style: solid;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: $input-background-color;
   border-color: $input-border-color;
-
-  &:hover {
-    border-color: $input-border-color-hover;
-  }
+  color: $input-color;
 
   &:focus {
-    border-color: $input-border-color-hover;
+    border-color: $input-color;
+  }
+
+  &:hover {
+    border-color: $input-color;
   }
 
   &:active {
-    border-color: $input-border-color-hover;
-  }
-
-  &:focus-visible {
-    outline: none;
+    border-color: $input-color;
   }
 
   &[disabled] {
     opacity: 0.3;
     pointer-events: none;
   }
-}
 
-.input-hint {
-  font-size: $input-hint-font-size;
+  &::placeholder {
+    opacity: 1;
+    transition: $transition-duration;
+    color: $input-placeholder-color;
+  }
 }

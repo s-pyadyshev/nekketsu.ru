@@ -1,0 +1,22 @@
+.slider,
+.slider-thumbs {
+  .swiper-slide {
+    h2 {
+      text-align: center;
+    }
+
+    img {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.slider-thumbs-nav .swiper-slide {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.slider-thumbs-nav .swiper-slide-thumb-active {
+  opacity: 1;
+}

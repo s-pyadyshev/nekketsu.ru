@@ -1,9 +1,17 @@
-mixin accordion
-  .accordion
-    .accordion-header
-      span.accordion-title Accordion title
-      button.accordion-toggle(data-accordion="")
-        span.accordion-toggle-closed +
-        span.accordion-toggle-opened -
-    .accordion-content
-    | Accordion content
+mixin accordion(title, content)
+  ul.accordion-list
+    li.accordion-list__item
+      .accordion
+        .accordion__header
+          button.accordion__toggle(data-accordion aria-expanded="false")
+            h3.accordion__title= title
+            .accordion__toggle-icon
+              +svg("triangle-down")
+            //- .accordion__toggle-opened
+            //-   +svg("triangle-up")
+        .accordion__content !{content}
+
+mixin accordion-native(title, content, open = false)
+  details(open = open ? '' : null)
+    summary= title
+    p= content

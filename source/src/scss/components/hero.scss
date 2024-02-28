@@ -1,0 +1,16 @@
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 200px;
+  background-color: rgb(112, 176, 230);
+}

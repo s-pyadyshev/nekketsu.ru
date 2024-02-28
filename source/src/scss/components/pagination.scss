@@ -1,6 +1,6 @@
 $pagination-color-current: $color-black;
-$pagination-color-hover: $color-black;
-$pagination-gap: 16px;
+$pagination-color-hover: $color-primary;
+$pagination-gap: 12px;
 
 .pagination {
   display: flex;
@@ -13,6 +13,8 @@ $pagination-gap: 16px;
 
   &__link {
     display: block;
+    padding-right: 8px;
+    padding-left: 8px;
     text-align: center;
 
     &:focus,
@@ -27,14 +29,20 @@ $pagination-gap: 16px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: $pagination-gap;
+    list-style-type: none;
 
     a {
       text-decoration: none;
     }
+  }
 
-    li {
-      margin-right: $pagination-gap;
-      margin-left: $pagination-gap;
+  &__next,
+  &__prev {
+    &:focus,
+    &:hover,
+    &:active {
+      color: $pagination-color-hover;
     }
   }
 }

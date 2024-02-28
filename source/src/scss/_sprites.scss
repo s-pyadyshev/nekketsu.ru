@@ -1,4 +1,44 @@
 $sprites: (
+	"blank": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 57,
+			height: 59,
+			image: "sprites.png",
+			total_width: 81,
+			total_height: 59,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 114,
+			height: 118,
+			image: "sprites@2x.png",
+			total_width: 162,
+			total_height: 118,
+		),
+	),
+	"login": (
+		normal: (
+			x: 59,
+			y: 0,
+			width: 22,
+			height: 26,
+			image: "sprites.png",
+			total_width: 81,
+			total_height: 59,
+		),
+		retina: (
+			x: 118,
+			y: 0,
+			width: 44,
+			height: 52,
+			image: "sprites@2x.png",
+			total_width: 162,
+			total_height: 118,
+		),
+	),
 );
 
 @each $name in map-keys($sprites) {

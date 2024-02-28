@@ -1,0 +1,153 @@
+extends pug/base
+
+prepend vars
+  - title = 'Resume'
+  - activePage = 'resume'
+  -
+    projects = [
+      {
+        company: "RTK IT",
+        logo: "images/rtkit.png",
+        link: "https://rtkit.ru",
+        name: "Internal records system (Knowledge management system)",
+        stack: `
+         <p>- Developed new features for Knowledge base system SUZ by using React, Redux, CKEditor 4.</p>
+         <p>- Developed new features for Knowledge base system Koschey by using TypeScript, React, Redux Toolkit, TinyMCE 6, FSD.</p>`,
+        country: "Russia",
+        date: "18-02-2022 - now",
+        details: [{}],
+      },
+      {
+        logo: "images/sl.svg",
+        company: "Seller Labs",
+        link: "https://www.sellerlabs.com",
+        name: "Seller Labs PRO",
+        stack:`
+        <p>- Our team combined four Amazon seller applications (Scope, Ignite, Quantify, Feedback Genius) into one: Seller Labs PRO. Made refactoring along the way.</p>
+        <p>- By using React, Redux, Jest, Material UI 4, Ramda</p>`,
+        country: "USA/Russia",
+        date: "02-2020 - 09-2021",
+        details: [{}],
+      },
+      {
+        logo: "images/freelance.svg",
+        company: "Freelance",
+        info: "Freelance projects from Upwork",
+        date: "2020 - 2024",
+        country: "UK, Netherlands, Germany",
+        details: [
+          {
+            stack: `<b>Freelance projects from Upwork</b>`,
+            info: `
+            - Developed 3 projects (80h+ each) by using React, Redux, react-router, Swiper
+            `
+          },
+          {
+            stack: "",
+            info: `
+            - Developed 40+ projects (40h+ each) by using Gulp, Pug, SCSS, JS, jQuery, UIkit 3, Swiper, Fullpage.js, scrollmagic
+            `,
+          },
+          {
+            stack: "",
+            info: `
+            - Developed UIkit (30+ components) with Storybook including stylization of vendor React libraries (react-day-picker, react-select, react-modal etc.)
+            `,
+          },
+          {
+            stack: "Various tasks included:",
+            info: `
+            - 3 projects with GooglePageSpeed > 95 requirement.<br>
+            - Detailed HTML/CSS/JS reviews of 3 projects (one made with React) in English, 200+ notes in total, including notes to improve accessibility<br>
+            - 1 site made with Wordpress 6.4.3 and Custom Field Suite`,
+          },
+
+        ]
+      },
+      {
+        logo: "images/ss.svg",
+        company: "SimbirSoft",
+        name: "Social net for IT company, Task manager, Jewelry shop",
+        stack: "",
+        date: "04-2018 - 12-2020",
+        country: "Russia",
+        details: [
+          {
+            stack: "",
+            info: `
+            - Developed new features on various 15+ projects<br>
+            - Worked with React, Redux (styled components, atomic design), Angular.js, Angular 5, Vue 2, JS, jQuery, Gulp, Pug, SCSS/Less/Stylus, Bootstrap/Foundation/Semantic UI/Ant Design, email templates, Figma, Zeplin, XD, PSD, AI, Avocode`,
+          },
+        ],
+      },
+      {
+        logo: "images/cat-paw.svg",
+        company: "Pet projects",
+        info: "Pet projects",
+        date: "",
+        details: [
+          {
+            stack: "<b>Beat'em Up World</b>",
+            info: `
+            <p>- the most complete list of the genre, detail pages, filters, comments</p>
+            <p>- Made with TypeScript, React 16.13, Redux, SCSS, Recharts, Disqus, Swiper</p>`,
+          },
+          {
+            stack: `<b>Sleeping Dogs Super Hacker</b>`,
+            info: `
+            <p> - Bulls and Cows variation minigame with keyboard controls and highscores</p>
+            <p>- Made with TypeScript, React 18, MobX, SCSS, Firebase/Firestore, i18next, average time/attempts stats. English and Russian translations</p>`,
+          },
+        ]
+      },
+      {
+        logo: "images/ritg.png",
+        company: "Russian IT Group",
+        date: "04-2016 - 11-2016",
+        country: "Russia",
+        details: [
+          {
+            stack: "",
+            info: `
+            - Developed HTML/CSS by using Gulp, Pug, Less/SCSS, Bootstrap 4, JS, jQuery, iconfont`
+          }
+        ]
+      },
+      {
+        logo: "images/lightning.jpg",
+        company: "Kontora",
+        date: "09-2015 - 03-2016",
+        country: "Russia",
+        details: [
+          {
+            stack: "",
+            info: `
+            - Developed HTML/CSS by using Gulp, Pug, Less, Bootstrap 3, JS, jQuery, iconfont`
+          }
+        ]
+      },
+    ]
+append vars
+
+block content
+  section.section
+    .container
+      h1.h1 Experience
+    .container
+      ul.project-list
+        each project in projects
+          li.project-list__item
+            .project
+              .project__company
+                a(href= project.link, target="_blank", rel="noopener noreferrer")
+                  b= project.company
+                  //- if project.logo
+                  //-   img.project__logo(src= project.logo alt="company logo.")
+              .project__date= project.date
+              .project__country= project.country
+              .project__details
+                div !{project.stack}
+                if project.details
+                  each detail in project.details
+                    div !{detail.stack}
+                    p !{detail.info}

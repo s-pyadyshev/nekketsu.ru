@@ -1,31 +1,17 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  text-decoration-skip: objects;
-  // stylelint-disable-next-line
-  text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  color: $color-primary;
-}
-
 html {
-  position: relative;
-  overflow-x: hidden;
   min-height: 100vh;
+  min-height: 100dvh;
   height: 100%;
-  box-sizing: border-box;
+  min-width: 320px;
   font-family: $font-primary;
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-height;
+  color: $color-black;
+
+  @include laptop {
+    font-size: $font-size-desktop;
+  }
 
   &.is-lock-scroll,
   &.is-lock-scroll body {
@@ -33,29 +19,17 @@ html {
   }
 }
 
-main {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-}
-
-p {
-  margin-top: 0;
+body {
+  height: 100%;
+  background-color: $color-white;
 }
 
 a,
 button {
-  transition-property: color;
-  transition-duration: $transition-duration;
+  transition: $transition-duration;
+}
+
+button {
   cursor: pointer;
 }
 
@@ -99,22 +73,11 @@ picture {
   }
 }
 
-fieldset {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-input {
-  border-radius: 0;
-}
-
 ol,
-ul,
-li {
-  list-style-type: none;
+ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 video {
@@ -123,30 +86,37 @@ video {
   height: 100%;
 }
 
-iframe {
-  display: block;
-}
-
-.js-lazy-load:not(.is-loaded) {
-  max-height: 50vh;
-}
-
-.page-wrap {
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; // fallback
-  // stylelint-disable-next-line
-  min-height: var(--vh);
+  height: 100%;
 }
 
-.background-dino {
-  background-image: url(../images/dino.png);
-  background-repeat: no-repeat;
-  background-size: 90%;
-  background-position: center 85%;
+main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
 
-  @include tablet {
-    background-size: 50%;
-    background-position: right bottom;
+// .background-dino {
+//   background-image: url(../images/dino.png);
+//   background-repeat: no-repeat;
+//   background-size: 90%;
+//   background-position: center 85%;
+
+//   @include tablet {
+//     background-size: 40%;
+//     background-position: right bottom;
+//   }
+// }
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
+}
+
+::selection {
+  background-color: $color-secondary;
+  color: $color-primary;
 }

@@ -1,3 +1,82 @@
+// Backgrounds
+.background-default {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.background-muted {
+  background-color: $color-muted;
+  color: $color-black;
+}
+
+.background-primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.background-secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+}
+
+// Text colors
+.text-default {
+  color: $color-white;
+}
+
+.text-muted {
+  color: $color-muted;
+}
+
+.text-primary {
+  color: $color-primary;
+}
+
+.text-secondary {
+  color: $color-secondary;
+}
+
+// Text alignment
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mt-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .clearfix {
   overflow: auto;
 
@@ -17,40 +96,24 @@
   clip: rect(0 0 0 0);
 }
 
-.background-default {
-  background-color: $color-white;
+.hidden-mobile {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
 }
 
-.background-muted {
-  background-color: $color-muted;
+.visible-mobile {
+  display: block;
+
+  @include tablet {
+    display: none;
+  }
 }
 
-.background-holocene {
-  background-color: $color-holocene;
-}
-
-.background-miocene {
-  background-color: $color-miocene;
-}
-
-.background-cretaceous {
-  background-color: $color-cretaceous;
-}
-
-.background-jurassic {
-  background-color: $color-jurassic;
-}
-
-.background-triassic {
-  background-color: $color-triassic;
-}
-
-.background-neoarchean {
-  background-color: $color-neoarchean;
-}
-
-.background-eoarchean {
-  background-color: $color-eoarchean;
+.list-none {
+  list-style-type: none;
 }
 
 .color-github {

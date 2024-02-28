@@ -1,32 +1,48 @@
 mixin slider()
-  .swiper-container.slider
+  .swiper.slider
     .swiper-wrapper
       .swiper-slide
         h2 Slide 1
+        img(src="http://placekitten.com/500/300" alt="")
       .swiper-slide
         h2 Slide 2
+        img(src="http://placekitten.com/500/300" alt="")
       .swiper-slide
         h2 Slide 3
+        img(src="http://placekitten.com/500/300" alt="")
     .swiper-pagination
-    .swiper-button-prev
-    .swiper-button-next
+    button.swiper-button-prev
+    button.swiper-button-next
 
 mixin slider-thumbs()
-  .swiper-container.slider-thumbs
+  .swiper.slider-thumbs
     .swiper-wrapper
       .swiper-slide
         h2 Slide 1
+        img(src="http://placekitten.com/500/300" alt="")
       .swiper-slide
         h2 Slide 2
+        img(src="http://placekitten.com/500/300" alt="")
       .swiper-slide
         h2 Slide 3
-    .slider-thumbs-pagination
+        img(src="http://placekitten.com/500/300" alt="")
+      .swiper-slide
+        h2 Slide 4
+        img(src="http://placekitten.com/500/300" alt="")
+    button.swiper-button-prev
+    button.swiper-button-next
 
-  .swiper-container.slider-thumbs-nav(thumbsslider='')
+  .swiper.slider-thumbs-nav
     .swiper-wrapper
       .swiper-slide
         h3 Slide 1
+        img(src="http://placekitten.com/500/300" alt="")
       .swiper-slide
         h3 Slide 2
+        img(src="http://placekitten.com/500/300" alt="")
       .swiper-slide
         h3 Slide 3
+        img(src="http://placekitten.com/500/300" alt="")
+      .swiper-slide
+        h3 Slide 4
+        img(src="http://placekitten.com/500/300" alt="")

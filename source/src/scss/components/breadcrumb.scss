@@ -1,15 +1,18 @@
 $breadcrumb-color: $color-black;
-$breadcrumb-current-color: $color-gray;
+$breadcrumb-current-color: $color-black;
 $breadcrumb-gap: 8px;
 
 .breadcrumb {
   color: $breadcrumb-color;
 
   a {
-    &:hover,
+    font-weight: 600;
+    text-decoration: none;
+
     &:focus,
+    &:hover,
     &:active {
-      text-decoration: underline;
+      color: $color-primary;
     }
   }
 

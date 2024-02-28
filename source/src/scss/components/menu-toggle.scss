@@ -5,11 +5,10 @@
   border: 0;
 
   .mobile-menu-active & {
+    z-index: 10;
+    position: relative;
     display: block;
-  }
-
-  img {
-    pointer-events: none;
+    margin-left: auto;
   }
 }
 
@@ -18,15 +17,7 @@
   background: none;
   border: 0;
 
-  @include tablet {
-    display: none;
-  }
-
   .mobile-menu-active & {
-    visibility: hidden;
-  }
-
-  img {
-    pointer-events: none;
+    display: none;
   }
 }

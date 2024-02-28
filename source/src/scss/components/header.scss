@@ -1,6 +1,7 @@
 $mobile-menu-background-color: #ccc;
 
 .header {
+  flex-shrink: 0;
   left: 0;
   right: 0;
   top: 0;
@@ -10,7 +11,7 @@ $mobile-menu-background-color: #ccc;
   padding: 16px 0;
 
   @include tablet {
-    padding: 30px 0;
+    padding: 0;
   }
 
   &__logo {
@@ -47,8 +48,6 @@ $mobile-menu-background-color: #ccc;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    // stylelint-disable-next-line
-    height: calc(var(--vh));
     color: $color-black;
     background-color: $mobile-menu-background-color;
     transform: translateX(-100%);
@@ -64,6 +63,7 @@ $mobile-menu-background-color: #ccc;
       height: auto;
       background-color: transparent;
       transform: translateX(0);
+      padding-left: 0;
     }
 
     .mobile-menu-active & {

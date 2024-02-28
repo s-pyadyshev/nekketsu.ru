@@ -1,12 +1,40 @@
 mixin tabs
   ul.tabs(data-tabs="tabs")
     li
-      button.tab-button.is-active(data-tab="tab1") Tab№1
+      button.tab-button.is-active(data-tab="tab1") Tab 1
     li
-      button.tab-button(data-tab="tab2") Tab№2
+      button.tab-button(data-tab="tab2") Tab 1
 
   .tab-content(data-tabs-content="tabs")
     .is-active(data-tab-content="tab1")
-      div Tab№1
+      div Tab 1
     div(data-tab-content="tab2")
-      div Tab№2
+      div Tab 2
+
+mixin tabs-custom(tabs)
+  .tabs
+    button.tabs__prev
+      +svg("chevron-left")
+    ul.tabs__list(data-tabs="tabs")
+      each data in tabs
+        if data.active
+          li
+            a.button.button--secondary.tab-button.is-active(href=data.href)= data.name
+        else
+          li
+            a.button.button--secondary.tab-button(href=data.href)= data.name
+    button.tabs__next
+      +svg("chevron-right")
+
+mixin tabs-custom-slider(tabs)
+  .swiper.tabs.js-tabs-slider
+    .swiper-wrapper
+      each data in tabs
+        if data.active
+          .swiper-slide
+            a.button.button--secondary.tab-button.is-active(href=data.href)= data.name
+        else
+          .swiper-slide
+            a.button.button--secondary.tab-button(href=data.href)= data.name
+  button.swiper-button-prev
+  button.swiper-button-next

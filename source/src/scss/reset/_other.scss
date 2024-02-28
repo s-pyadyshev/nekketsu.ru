@@ -1,0 +1,104 @@
+:where(hr) {
+  box-sizing: content-box;
+  height: 0;
+  color: inherit;
+  overflow: visible;
+}
+
+:where(ol ol, ol ul, ol dl, ul ol, ul ul, ul dl, dl ol, dl ul, dl dl) {
+  margin: 0;
+}
+
+:where(b, strong) {
+  font-weight: bolder;
+}
+
+:where(audio, video) {
+  display: inline-block;
+}
+
+:where(audio):not([controls]) {
+  display: none;
+  height: 0;
+}
+
+:where(img) {
+  border: 0;
+}
+
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, picture, svg) {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+:where(svg):not(:root) {
+  overflow: hidden;
+}
+
+:where(table) {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+:where(details) {
+  display: block;
+}
+
+:where(dialog) {
+  background-color: inherit;
+  border: solid;
+  color: inherit;
+  display: block;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: fit-content;
+
+  &:not([open]) {
+    display: none;
+  }
+}
+
+:where(summary) {
+  display: list-item;
+}
+
+:where(canvas) {
+  display: inline-block;
+}
+
+:where(template) {
+  display: none;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([hidden]:not([hidden="until-found"])) {
+  display: none !important;
+}
+
+:where(:focus-visible) {
+  outline: 2px solid var(--focus-color, Highlight);
+  outline-offset: 2px;
+}
+
+:where(
+    .visually-hidden:not(:focus, :active, :focus-within, .not-visually-hidden)
+  ) {
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

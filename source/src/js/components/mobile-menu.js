@@ -1,18 +1,21 @@
 export const mobileMenu = (() => {
-  const init = function () {
-    const toggleMenuButton = document.querySelectorAll(".js-toggle-menu");
+  const init = () => {
+    const mobileMenuOpen = document.querySelector(".js-open-menu");
 
-    if (!toggleMenuButton) {
+    if (!mobileMenuOpen) {
       return;
     }
 
-    const header = document.querySelector(".header");
-    const body = document.getElementsByTagName("body")[0];
+    const mobileMenuClose = document.querySelector(".js-close-menu");
+    const body = document.querySelector("body");
 
-    header.addEventListener("click", (event) => {
-      if (event.target.className.includes("js-toggle-menu")) {
-        body.classList.toggle("mobile-menu-active");
-      }
+    mobileMenuOpen.addEventListener("click", function () {
+      body.classList.toggle("mobile-menu-active");
+      mobileMenuClose.focus();
+    });
+
+    mobileMenuClose.addEventListener("click", function () {
+      body.classList.toggle("mobile-menu-active");
     });
   };
 

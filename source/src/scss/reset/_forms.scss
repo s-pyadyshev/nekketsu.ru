@@ -1,0 +1,111 @@
+:where(button, input, optgroup, select, textarea) {
+  line-height: inherit;
+  border: 1px solid currentColor;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+:where(button) {
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  border-radius: 0;
+}
+
+:where(button, [type="button"], [type="reset"], [type="submit"]) {
+  -webkit-appearance: button;
+  padding: 1px 6px;
+  cursor: pointer;
+}
+
+:where(label, select, summary, [role="button"], [role="option"]) {
+  cursor: pointer;
+}
+
+:where(input) {
+  overflow: visible;
+  border-radius: 0;
+}
+
+:where(fieldset) {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border: 1px solid currentColor;
+}
+
+:where(legend) {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+:where(progress) {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+:where(select) {
+  text-transform: none;
+}
+
+:where(textarea) {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+:where([type="checkbox"], [type="radio"]) {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:where([type="search"]) {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+:where([type="color"]) {
+  background: inherit;
+}
+
+:where(:disabled) {
+  cursor: not-allowed;
+}
+
+:where(label:has(> input:disabled), label:has(+ input:disabled)) {
+  cursor: not-allowed;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+::-webkit-search-decoration,
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}

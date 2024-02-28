@@ -1,51 +1,87 @@
 // stylelint-disable scss/dollar-variable-empty-line-before
 
-// COLORS
-$color-black: #000;
-$color-white: #fff;
-$color-gray: #999;
-
-// PRIMARY AND SECONDARY
-$color-primary: #072a3e;
-$color-secondary: #a80f21;
-$color-muted: #f4f4f4;
-$color-github: #24292f;
-$color-linkedin: #0a66c2;
-$color-upwork: #14a800;
-$color-holocene: rgb(254, 242, 236);
-$color-miocene: rgb(255, 255, 0);
-$color-cretaceous: rgb(127, 198, 78);
-$color-jurassic: rgb(52, 178, 201);
-$color-triassic: rgb(129, 43, 146);
-$color-neoarchean: rgb(249, 155, 193);
-$color-eoarchean: rgb(218, 3, 127);
-
-// FORMS
-$input-border-width: 1px;
-$input-border-color: $color-black;
-$input-border-color-hover: $color-gray;
-$input-icon-width: 32px;
-$input-padding-x: 8px;
-$input-padding-y: 8px;
-$input-padding: $input-padding-x $input-padding-y;
-$input-hint-font-size: 14px;
-$input-padding-icon-x: $input-icon-width + $input-padding-x;
-
-// FONTS
+// Fonts
 // stylelint-disable-next-line
 $font-primary: "Baloo2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $font-weight: 400;
 $line-height: 1.4;
 $font-size: 20px;
+$font-size-desktop: 18px;
 
-// EASING TRANSITIONS
-$transition-duration: 0.3s;
+// Colors
+$color-black: #000;
+$color-white: #fff;
+$color-muted: #f8f8f8;
+
+$color-primary: #072a3e;
+$color-secondary: #a80f21;
+$color-muted: #f4f4f4;
+$color-github: #24292f;
+$color-linkedin: #0a66c2;
+$color-upwork: #14a800;
+
+// Primary - Secondary
+$color-primary: #1e87f0;
+$color-secondary: #222;
+
+// Forms
+$input-background-color: $color-white;
+$input-border-width: 1px;
+$input-border-color: $color-black;
+$input-icon-width: 32px;
+$input-padding-x: 8px;
+$input-padding-y: 8px;
+$input-padding: $input-padding-x $input-padding-y;
+$input-hint-font-size: 14px;
+$input-padding-icon-x: $input-icon-width + $input-padding-x;
+$input-color: $color-black;
+
+// Global cosmetic styles
+$overlay: rgba(0, 0, 0, 0.2);
+
+// Sections
+$section-padding-vertical: 40px;
+$section-padding-vertical-desktop: 80px;
+
+// Transitions
+$transition-duration: 0.2s;
 
 // Settings
-$desktop: 1025;
-$desktop-xl: 1800;
-$laptop: 1440;
-$tablet: 768;
-$mobile: 320;
-$desktop-vh: 750;
+$tablet: 768; // Tablets, Ipads (portrait) - from 768px to 1024px
+$laptop: 1025; // Laptops, Desktops - from 1025px to 1366px
+$desktop: 1360; // Desktops = 1366px to higher resolution desktops
+$desktop-l: 1600;
+
+// Bootstrap overrides
+
+// scss-docs-end grid-breakpoints
+// $grid-gutter-width: 16px;
+
+$container-padding-x: 70px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+@each $breakpoint, $value in $grid-breakpoints {
+  .hidden-#{$breakpoint} {
+    @media (min-width: $value) {
+      display: none;
+    }
+  }
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1710px,
+) !default;
+// scss-docs-end container-max-widths

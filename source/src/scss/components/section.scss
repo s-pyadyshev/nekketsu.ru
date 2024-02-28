@@ -2,3 +2,17 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.section-intro {
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+}
+
+.section-intro__icons {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}

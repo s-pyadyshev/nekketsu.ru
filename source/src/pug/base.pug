@@ -27,6 +27,7 @@ block vars
       appleTouchFullscreen: null,
       applicationName: null,
       charset: 'utf-8',
+      colorScheme: 'dark light',
       description: description,
       formatDetection: {
         address: true,
@@ -120,6 +121,8 @@ html(class=html.classList)&attributes(html.attrs)
     block meta
       if meta.charset !== null
         meta(charset!=meta.charset)
+      if meta.colorScheme !== null
+        meta(color-scheme!=meta.colorScheme)
       if meta.XUACompatible !== null
         meta(http-equiv="X-UA-Compatible" content!=meta.XUACompatible)
       if meta.viewport !== null
@@ -275,17 +278,20 @@ html(class=html.classList)&attributes(html.attrs)
         link(rel="manifest" href!=link.manifest)
       if link.maskIcon.href !== null
         link(rel="mask-icon" href!=link.maskIcon.href color=link.maskIcon.color)
-      include ./favicon.pug
+      include ./favicon
     block styles
       link(rel="stylesheet" href!=`${baseDir}css/main.css?v=${Date.now()}`)
     block head-end
   body(class=body.classList)&attributes(body.attrs)
     block body-start
-    .page-wrap(class=`${activePage === "home" ? "background-dino" : ""}`)
+    .page-wrapper.background-dino
       include ../pug/components/header.pug
       main.main
         block content
       include ../pug/components/footer.pug
     block scripts
+      //- script(src!=`${baseDir}js/jquery-3.6.0.min.js`)
+      //- script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+      script(src!=`${baseDir}js/vendor.js?v=${Date.now()}`)
       script(src!=`${baseDir}js/main.js?v=${Date.now()}`)
     block body-end

@@ -1,20 +1,15 @@
-$container-padding-xs: 30px;
-$container-padding-desktop: 70px;
-
-@mixin makeContainer() {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  max-width: $laptop * 1px;
-  padding-right: $container-padding-xs;
-  padding-left: $container-padding-xs;
-
-  @include desktop {
-    padding-right: $container-padding-desktop;
-    padding-left: $container-padding-desktop;
+.container {
+  @media (min-width: 1400px) {
+    max-width: 1640px;
+    padding-right: $container-padding-x * 2;
+    padding-left: $container-padding-x * 2;
   }
 }
 
-.container {
-  @include makeContainer;
+.container-lg {
+  @media (min-width: 1400px) {
+    max-width: 1920px;
+    padding-right: $container-padding-x * 2;
+    padding-left: $container-padding-x * 2;
+  }
 }

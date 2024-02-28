@@ -1,72 +1,71 @@
-$h1-font-size-desktop: 64px;
-$h2-font-size-desktop: 48px;
-$h3-font-size-desktop: 32px;
-$h4-font-size-desktop: 24px;
-$h5-font-size-desktop: 20px;
-$h6-font-size-desktop: 16px;
+$h1-font-size: 32px;
+$h2-font-size: 32px;
+$h3-font-size: 16px;
+$h4-font-size: 12px;
+$h5-font-size: 10px;
+$h6-font-size: 8px;
+$h1-font-size-laptop: 64px;
+$h2-font-size-laptop: 64px;
+$h3-font-size-laptop: 32px;
+$h4-font-size-laptop: 24px;
+$h5-font-size-laptop: 20px;
+$h6-font-size-laptop: 16px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
 
 .h1 {
-  font-weight: 600;
-  font-size: 42px;
+  font-size: $h1-font-size;
   margin-bottom: 32px;
 
-  @include desktop {
-    font-size: $h1-font-size-desktop;
+  @include laptop {
+    font-size: $h1-font-size-laptop;
   }
 }
 
 .h2 {
-  font-weight: 400;
-  font-size: 32px;
+  font-size: $h2-font-size;
+  margin-bottom: 0;
 
-  @include desktop {
-    font-size: $h2-font-size-desktop;
+  @include laptop {
+    font-size: $h2-font-size-laptop;
   }
 }
 
 .h3 {
-  font-weight: 400;
+  font-size: $h3-font-size;
 
-  @include desktop {
-    font-size: $h3-font-size-desktop;
+  @include laptop {
+    font-size: $h3-font-size-laptop;
   }
 }
 
 .h4 {
-  font-size: 24px;
-  margin-bottom: 0;
+  font-size: $h4-font-size;
 
-  @include desktop {
-    font-size: $h4-font-size-desktop;
+  @include laptop {
+    font-size: $h4-font-size-laptop;
   }
 }
 
 .h5 {
-  font-size: 20px;
-  margin-bottom: 0;
+  font-size: $h5-font-size;
 
-  @include desktop {
-    font-size: $h5-font-size-desktop;
+  @include laptop {
+    font-size: $h5-font-size-laptop;
   }
 }
 
 .h6 {
-  font-size: 16px;
-  margin-bottom: 0;
+  font-size: $h6-font-size;
 
-  @include desktop {
-    font-size: $h6-font-size-desktop;
-  }
-}
-
-.ul {
-  li {
-    list-style-type: disc;
-  }
-}
-
-.ol {
-  li {
-    list-style-type: decimal;
+  @include laptop {
+    font-size: $h6-font-size-laptop;
   }
 }

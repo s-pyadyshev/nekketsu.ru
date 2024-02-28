@@ -2,13 +2,13 @@ header.header
   .container
     .header__inner
       .header__menu-toggle
-        button.menu-toggle-open.js-toggle-menu(type="button")
+        button.menu-toggle-open.js-open-menu(type="button")
           img(src="images/menu.svg" alt="logo." width="30")
-      a.header__logo(href="/")
-        img.logo(src="images/sp-logo.png" alt="logo." width="350" height="350")
+      //- a.header__logo(href="/")
+        //- img.logo(src="images/sp-logo.png" alt="logo." width="350" height="350")
 
       .header__menu
-        button.menu-toggle-close.js-toggle-menu(type="button")
+        button.menu-toggle-close.js-close-menu(type="button")
           img(src="images/close.svg" alt="logo." width="30")
         +navbar(
           [
@@ -19,9 +19,9 @@ header.header
               name: "home"
             },
             {
-              text: "Projects",
-              href: "projects.html",
-              name: "projects"
+              text: "Resume",
+              href: "resume.html",
+              name: "resume"
             },
             {
               text: "About",

@@ -1,36 +1,62 @@
 .project {
-  @include makeContainer;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  font-size: 20px;
+  box-shadow: 0px 15px 10px -15px #111;
 
-  &__date {
-    width: 100%;
+  p {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
 
-    @include tablet {
-      width: 20%;
-      padding-left: 16px;
+.project__company {
+  width: 20%;
+  font-size: 24px;
+
+  a {
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: none;
     }
   }
+}
 
-  &__info {
-    width: 100%;
-    margin-bottom: 32px;
-    padding-right: 16px;
+.project__country {
+  width: 100%;
+  margin-left: auto;
 
-    @include tablet {
-      width: 60%;
-      margin-bottom: 0;
-      padding-left: 16px;
-    }
+  @include tablet {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+.project__date {
+  width: 100%;
+
+  @include tablet {
+    width: 20%;
+  }
+}
+
+.project__details {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.project__info {
+  @include tablet {
+    padding: 16px 0;
   }
 
-  &__name {
-    width: 100%;
-    padding-right: 16px;
-
-    @include tablet {
-      width: 20%;
-    }
+  b {
+    display: block;
   }
+}
+
+.project__name {
+  width: 40%;
 }

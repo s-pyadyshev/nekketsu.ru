@@ -1,49 +1,5 @@
-.project-list__item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  &--company {
-    color: $color-white;
-
-    .project {
-      flex-wrap: nowrap;
-    }
-
-    .project__name {
-      display: flex;
-      align-items: center;
-      width: auto;
-      flex-shrink: 0;
-
-      @include tablet {
-        width: 20%;
-      }
-    }
-
-    .project__info {
-      display: flex;
-      align-items: center;
-      margin-top: 16px;
-      margin-bottom: 0;
-      padding-left: 8px;
-
-      @include tablet {
-        margin-top: 0;
-      }
-
-      &:empty {
-        display: none;
-      }
-    }
-
-    .project__date {
-      &:empty {
-        display: none;
-
-        @include tablet {
-          display: block;
-        }
-      }
-    }
-  }
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

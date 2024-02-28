@@ -1,12 +1,25 @@
-$tab-active-background-color: $color-gray;
+$tab-active-background-color: $color-primary;
+$tab-active-color: $color-white;
+$tab-border-color: $color-secondary;
 
 .tabs {
   display: flex;
+  list-style-type: none;
 
-  .tab-button {
-    &.is-active {
-      background-color: $tab-active-background-color;
+  li:not(:last-child) {
+    button {
+      border-right: 0;
     }
+  }
+}
+
+.tab-button {
+  background: none;
+  border: 1px solid $tab-border-color;
+
+  &.is-active {
+    background-color: $tab-active-background-color;
+    color: $tab-active-color;
   }
 }
 

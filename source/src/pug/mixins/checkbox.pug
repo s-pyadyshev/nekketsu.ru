@@ -1,4 +1,6 @@
-mixin checkbox(label)
+mixin checkbox(label, checked)
   label.checkbox
-    input.checkbox-input(type='checkbox' name="checkbox")
-    span.checkbox-box= label
+    input.checkbox-input(type="checkbox" name="checkbox" checked=checked)
+    .checkbox-box
+      span.checkbox-box__label= label
+      +svg("check")

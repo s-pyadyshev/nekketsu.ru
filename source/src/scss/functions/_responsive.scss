@@ -1,24 +1,24 @@
-// адаптивные стили через vw
+// vw
 @function vw($value, $base: $laptop) {
-	@return $value / $base * 100vw;
+  @return $value / $base * 100vw;
 }
 
-// обычные пиксельные стили
+// common px
 @function px($value, $base: $laptop) {
-	@return $value * ($laptop * 1px) / $base;
+  @return $value * ($laptop * 1px) / $base;
 }
 
-// vh - для адаптации стилей под высоту страницы
+// vh - adapt styles according to page height
 @function vh($value, $base: $desktop-vh) {
-	@return $value / $base * 100vh;
+  @return $value / $base * 100vh;
 }
 
-// vmin - для мобильных устройств
+// vmin - for mobiles
 @function vm($value, $base: $mobile) {
-	@return $value / $base * 100vmin;
+  @return $value / $base * 100vmin;
 }
 
-// vmin - для планшетных устройств
+// vmin - for tablets
 @function vt($value, $base: $tablet) {
-	@return $value / $base * 100vmin;
+  @return $value / $base * 100vmin;
 }

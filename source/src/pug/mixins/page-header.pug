@@ -1,0 +1,6 @@
+mixin page-header(title, text, background)
+  section.page-header(style=`background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), linear-gradient(180deg, transparent 0%, transparent 50%, rgba(0,0,0,1) 100%), url(${background})`)
+    .container.text-center
+      h1= title
+      if text
+        p= text

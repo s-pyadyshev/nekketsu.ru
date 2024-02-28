@@ -1,7 +1,6 @@
 mixin navbar(links)
-  nav.navbar(role="navigation" aria-label="main navigation")
+  nav.navbar(aria-label="main navigation")
     ul.navbar__list
       each link in links
-        - isActive = link.name === activePage;
         li
-          a.navbar__link(href=link.href class=`${isActive ? "navbar__link--active" : ""}`)= link.text
+          a.navbar__link(href=link.href)= link.text

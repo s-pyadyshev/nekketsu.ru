@@ -2,20 +2,11 @@
   &__list {
     display: flex;
     text-align: center;
+    list-style-type: none;
+    gap: 32px;
 
     @include tablet {
       text-align: left;
-    }
-
-    li {
-      &:not(:last-child) {
-        margin-bottom: 32px;
-        
-        @include tablet {
-          margin-right: 32px;
-          margin-bottom: 0;
-        }
-      }
     }
   }
 
@@ -23,13 +14,13 @@
     font-weight: 700;
     font-size: 24px;
     text-decoration: none;
-    color: $color-primary;
+    color: #b68c9a;
 
     &:hover,
     &:focus,
     &:active,
     &--active {
-      color: $color-secondary;
+      color: #ef7706;
     }
   }
 }
