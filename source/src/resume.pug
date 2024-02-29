@@ -32,6 +32,7 @@ prepend vars
       {
         logo: "images/freelance.svg",
         company: "Freelance",
+        link: "https://www.upwork.com/o/profiles/users/_~010753d24a0e98f608",
         info: "Freelance projects from Upwork",
         date: "2020 - 2024",
         country: "UK, Netherlands, Germany",
@@ -39,27 +40,27 @@ prepend vars
           {
             stack: `<b>Freelance projects from Upwork</b>`,
             info: `
-            - Developed 3 projects (80h+ each) by using React, Redux, react-router, Swiper
+            <p>- Developed 3 projects (80h+ each) by using React, Redux, react-router, Swiper</p>
             `
           },
           {
             stack: "",
             info: `
-            - Developed 40+ projects (40h+ each) by using Gulp, Pug, SCSS, JS, jQuery, UIkit 3, Swiper, Fullpage.js, scrollmagic
+            <p>- Developed 40+ projects (40h+ each) by using Gulp, Pug, SCSS, JS, jQuery, UIkit 3, Swiper, Fullpage.js, scrollmagic</p>
             `,
           },
           {
             stack: "",
             info: `
-            - Developed UIkit (30+ components) with Storybook including stylization of vendor React libraries (react-day-picker, react-select, react-modal etc.)
+            <p>- Developed UIkit (30+ components) with Storybook including stylization of vendor React libraries (react-day-picker, react-select, react-modal etc.)</p>
             `,
           },
           {
             stack: "Various tasks included:",
             info: `
-            - 3 projects with GooglePageSpeed > 95 requirement.<br>
+            <p>- 3 projects with GooglePageSpeed > 95 requirement.<br>
             - Detailed HTML/CSS/JS reviews of 3 projects (one made with React) in English, 200+ notes in total, including notes to improve accessibility<br>
-            - 1 site made with Wordpress 6.4.3 and Custom Field Suite`,
+            - 1 site made with Wordpress 6.4.3 and Custom Field Suite</p>`,
           },
 
         ]
@@ -67,6 +68,7 @@ prepend vars
       {
         logo: "images/ss.svg",
         company: "SimbirSoft",
+        link: "https://www.simbirsoft.com/en",
         name: "Social net for IT company, Task manager, Jewelry shop",
         stack: "",
         date: "04-2018 - 12-2020",
@@ -75,14 +77,15 @@ prepend vars
           {
             stack: "",
             info: `
-            - Developed new features on various 15+ projects<br>
-            - Worked with React, Redux (styled components, atomic design), Angular.js, Angular 5, Vue 2, JS, jQuery, Gulp, Pug, SCSS/Less/Stylus, Bootstrap/Foundation/Semantic UI/Ant Design, email templates, Figma, Zeplin, XD, PSD, AI, Avocode`,
+            <p>- Developed new features on various 15+ projects<br>
+            - Worked with React, Redux (styled components, atomic design), Angular.js, Angular 5, Vue 2, JS, jQuery, Gulp, Pug, SCSS/Less/Stylus, Bootstrap/Foundation/Semantic UI/Ant Design, email templates, Figma, Zeplin, XD, PSD, AI, Avocode</p>`,
           },
         ],
       },
       {
         logo: "images/cat-paw.svg",
         company: "Pet projects",
+        link: "https://github.com/s-pyadyshev",
         info: "Pet projects",
         date: "",
         details: [
@@ -103,26 +106,28 @@ prepend vars
       {
         logo: "images/ritg.png",
         company: "Russian IT Group",
+        link: "https://ritg.ru",
         date: "04-2016 - 11-2016",
         country: "Russia",
         details: [
           {
             stack: "",
             info: `
-            - Developed HTML/CSS by using Gulp, Pug, Less/SCSS, Bootstrap 4, JS, jQuery, iconfont`
+            <p>- Developed HTML/CSS by using Gulp, Pug, Less/SCSS, Bootstrap 4, JS, jQuery, iconfont</p>`
           }
         ]
       },
       {
         logo: "images/lightning.jpg",
         company: "Kontora",
+        link: "https://kontora.team",
         date: "09-2015 - 03-2016",
         country: "Russia",
         details: [
           {
             stack: "",
             info: `
-            - Developed HTML/CSS by using Gulp, Pug, Less, Bootstrap 3, JS, jQuery, iconfont`
+            <p>- Developed HTML/CSS by using Gulp, Pug, Less, Bootstrap 3, JS, jQuery, iconfont</p>`
           }
         ]
       },
@@ -149,5 +154,5 @@ block content
                 div !{project.stack}
                 if project.details
                   each detail in project.details
-                    div !{detail.stack}
-                    p !{detail.info}
+                    | !{detail.stack}
+                    | !{detail.info}

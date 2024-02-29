@@ -1158,6 +1158,7 @@ h6 {
 
 .section-intro__icons {
   margin-top: 16px;
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1271,6 +1272,7 @@ h6 {
 
 .section-intro__icons {
   margin-top: 16px;
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2154,7 +2156,7 @@ h6 {
 
 @media (min-width: 1025px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .h1 {
