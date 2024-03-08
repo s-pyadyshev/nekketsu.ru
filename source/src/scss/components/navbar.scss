@@ -12,9 +12,13 @@
 
   &__link {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     color: #b68c9a;
+
+    @include tablet {
+      font-size: 24px;
+    }
 
     &:hover,
     &:focus,

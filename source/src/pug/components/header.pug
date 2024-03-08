@@ -1,15 +1,7 @@
 header.header
   .container
     .header__inner
-      .header__menu-toggle
-        button.menu-toggle-open.js-open-menu(type="button")
-          img(src="images/menu.svg" alt="logo." width="30")
-      //- a.header__logo(href="/")
-        //- img.logo(src="images/sp-logo.png" alt="logo." width="350" height="350")
-
       .header__menu
-        button.menu-toggle-close.js-close-menu(type="button")
-          img(src="images/close.svg" alt="logo." width="30")
         +navbar(
           [
             {

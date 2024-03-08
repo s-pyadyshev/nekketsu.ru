@@ -1054,48 +1054,9 @@ h6 {
 }
 
 .header__menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 98;
-  overflow: hidden;
-  overflow-y: auto;
+  width: 100%;
   margin: 0;
-  padding: 32px;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  color: #000;
-  background-color: #ccc;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-overflow-scrolling: touch;
-}
-
-.mobile-menu-active .header__menu {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
-.header__menu .navbar__list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  padding: 32px 0 0 0;
 }
 
 .menu-toggle-close {
@@ -1133,7 +1094,7 @@ h6 {
 
 .navbar__link {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   color: #b68c9a;
 }
@@ -1837,32 +1798,12 @@ h6 {
     margin: 0;
   }
 
-  .header__menu {
-    position: static;
-    display: block;
-    margin-right: auto;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    padding-left: 0;
-  }
-
-  .header__menu .navbar__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .header__menu-toggle {
-    display: none;
-  }
-
   .navbar__list {
     text-align: left;
+  }
+
+  .navbar__link {
+    font-size: 24px;
   }
 
   .contact {
