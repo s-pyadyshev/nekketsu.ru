@@ -840,13 +840,13 @@ main {
 }
 
 ::-moz-selection {
-  background-color: #222;
-  color: #1e87f0;
+  background-color: #a80f21;
+  color: #072a3e;
 }
 
 ::selection {
-  background-color: #222;
-  color: #1e87f0;
+  background-color: #a80f21;
+  color: #072a3e;
 }
 
 .background-default {
@@ -860,12 +860,12 @@ main {
 }
 
 .background-primary {
-  background-color: #1e87f0;
+  background-color: #072a3e;
   color: #fff;
 }
 
 .background-secondary {
-  background-color: #222;
+  background-color: #a80f21;
   color: #fff;
 }
 
@@ -878,11 +878,11 @@ main {
 }
 
 .text-primary {
-  color: #1e87f0;
+  color: #072a3e;
 }
 
 .text-secondary {
-  color: #222;
+  color: #a80f21;
 }
 
 .text-center {
@@ -983,8 +983,10 @@ h6 {
 }
 
 .h2 {
-  font-size: 32px;
-  margin-bottom: 0;
+  font-size: 24px;
+  margin-bottom: 32px;
+  border-top: 2px solid #072a3e;
+  border-bottom: 2px solid #072a3e;
 }
 
 .h3 {
@@ -1168,6 +1170,11 @@ h6 {
   gap: 32px;
 }
 
+.project-list__item:not(:last-child) {
+  -webkit-box-shadow: 0px 15px 10px -15px #111;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,8 +1185,6 @@ h6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 20px;
-  -webkit-box-shadow: 0px 15px 10px -15px #111;
-  box-shadow: 0px 15px 10px -15px #111;
 }
 
 .project p {
@@ -1192,10 +1197,14 @@ h6 {
   font-size: 24px;
 }
 
+.project__company a {
+  text-decoration: none;
+}
+
 .project__company a:focus,
 .project__company a:hover,
 .project__company a:active {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .project__country {
@@ -2105,7 +2114,7 @@ h6 {
   }
 
   .h2 {
-    font-size: 64px;
+    font-size: 32px;
   }
 
   .h3 {

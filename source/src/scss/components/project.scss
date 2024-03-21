@@ -3,7 +3,6 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: 20px;
-  box-shadow: 0px 15px 10px -15px #111;
 
   p {
     margin-top: 0;
@@ -16,10 +15,12 @@
   font-size: 24px;
 
   a {
+    text-decoration: none;
+
     &:focus,
     &:hover,
     &:active {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 }
